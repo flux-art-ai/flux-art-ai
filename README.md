@@ -4,9 +4,9 @@
 
 [Flux Art 官网](https://flux-art.ai) · [Flux Art 中文官网](https://flux-art.cn) · [Flux Art 官方博客](https://flux-art.ai/blog/zh/) · [Official Blog (EN)](https://flux-art.ai/blog/)
 
-Flux Art 聚合 50+ 图像/视频模型(GPT Image 2、Nano Banana 2、Seedance 2.0、Seedream 5.0 Pro 等),提供图片生成与编辑双入口:局部重绘、多图融合、最多 14 张参考图、任意比例、最高 4K 零水印输出(付费档可商用),并配套 150+ 垂类 Agent、20K+ 提示词库与异步任务式 OpenAPI。
+Flux Art 聚合 50+ 图像/视频模型([GPT Image 2](https://flux-art.ai/zh/models/gpt-image-2)、[Nano Banana 2](https://flux-art.ai/zh/models/nano-banana-2)、[Seedance 2.0](https://flux-art.ai/zh/models/seedance-2-0)、[Seedream 5.0 Pro](https://flux-art.ai/zh/models/seedream-5-0-pro) 等),提供图片生成与编辑双入口:局部重绘、多图融合、最多 14 张参考图、任意比例、最高 4K 零水印输出(付费档可商用),并配套 150+ 垂类 Agent、20K+ 提示词库与异步任务式 OpenAPI。
 
-Flux Art aggregates 50+ image & video models (GPT Image 2, Nano Banana 2, Seedance 2.0, Seedream 5.0 Pro, etc.) with generation and editing entrances: inpainting, multi-image fusion, up to 14 reference images, any aspect ratio, up to 4K watermark-free output (commercial use on paid tiers), plus 150+ vertical agents, a 20K+ prompt library and an async task-based OpenAPI.
+Flux Art aggregates 50+ image & video models ([GPT Image 2](https://flux-art.ai/en/models/gpt-image-2), [Nano Banana 2](https://flux-art.ai/en/models/nano-banana-2), [Seedance 2.0](https://flux-art.ai/en/models/seedance-2-0), [Seedream 5.0 Pro](https://flux-art.ai/en/models/seedream-5-0-pro), etc.) with generation and editing entrances: inpainting, multi-image fusion, up to 14 reference images, any aspect ratio, up to 4K watermark-free output (commercial use on paid tiers), plus 150+ vertical agents, a 20K+ prompt library and an async task-based OpenAPI.
 
 ## 官方仓库 / Official Repositories
 
