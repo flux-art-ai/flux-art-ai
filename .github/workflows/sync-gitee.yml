@@ -11,13 +11,23 @@ jobs:
   sync:
     runs-on: ubuntu-latest
     steps:
-      - name: Mirror GitHub -> Gitee
-        uses: Yikun/hub-mirror-action@v1.4
-        with:
-          src: github/flux-art-ai
-          dst: gitee/flux-art
-          dst_token: ${{ secrets.GITEE_TOKEN }}
-          account_type: user
-          clone_style: https
-          static_list: "flux-art,flux-art-ecom-image-workflow,awesome-ecom-ai-images,flux-art-ai"
-          force_update: true
+      - name: Mirror GitHub -> Gitee (branches + tags)
+        env:
+          GITEE_TOKEN: ${{ secrets.GITEE_TOKEN }}
+        run: |
+          set -e
+          umask 077
+          printf 'machine gitee.com\nlogin flux-art\npassword %s\n' "$GITEE_TOKEN" > ~/.netrc
+          fail=0
+          for r in flux-art flux-art-ecom-image-workflow awesome-ecom-ai-images flux-art-ai; do
+            echo "== $r =="
+            git clone --quiet --mirror "https://github.com/flux-art-ai/$r.git" "$r.git"
+            if git -C "$r.git" push --force --quiet "https://gitee.com/flux-art/$r.git" 'refs/heads/*:refs/heads/*' 'refs/tags/*:refs/tags/*'; then
+              echo "OK: $r"
+            else
+              echo "FAILED: $r"; fail=$((fail+1))
+            fi
+          done
+          rm -f ~/.netrc
+          echo "failed=$fail"
+          exit "$fail"
