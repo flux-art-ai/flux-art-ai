@@ -1,0 +1,23 @@
+name: Sync to Gitee
+
+on:
+  schedule:
+    - cron: '17 * * * *'   # 每小时一次
+  workflow_dispatch: {}     # 支持手动触发(Actions 页 Run workflow 按钮)
+  push:
+    branches: [main]
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Mirror GitHub -> Gitee
+        uses: Yikun/hub-mirror-action@v1.4
+        with:
+          src: github/flux-art-ai
+          dst: gitee/flux-art
+          dst_token: ${{ secrets.GITEE_TOKEN }}
+          account_type: user
+          clone_style: https
+          static_list: "flux-art,flux-art-ecom-image-workflow,awesome-ecom-ai-images,flux-art-ai"
+          force_update: true
