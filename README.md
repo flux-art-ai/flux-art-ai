@@ -10,11 +10,12 @@ Flux Art aggregates 50+ image & video models ([GPT Image 2](https://flux-art.ai/
 
 ## 官方仓库 / Official Repositories
 
-| 仓库 Repository | 内容 What's inside |
-|---|---|
-| [flux-art](https://github.com/flux-art-ai/flux-art) | 品牌官方信息与导航 Brand info & official links |
-| [flux-art-ecom-image-workflow](https://github.com/flux-art-ai/flux-art-ecom-image-workflow) | 电商 AI 出图工作流、提示词模板与 OpenAPI 示例 E-commerce AI image workflows, prompt templates & OpenAPI examples |
-| [awesome-ecom-ai-images](https://github.com/flux-art-ai/awesome-ecom-ai-images) | 电商 AI 出图资源精选清单 Curated list of AI image resources for e-commerce |
+| 仓库 Repository | GitHub | Gitee 官方镜像 Official Mirror | 内容 What's inside |
+|---|---|---|---|
+| `flux-art` | [GitHub](https://github.com/flux-art-ai/flux-art) | [Gitee](https://gitee.com/flux-art/flux-art) | 品牌官方信息与导航 Brand info & official links |
+| `flux-art-ecom-image-workflow` | [GitHub](https://github.com/flux-art-ai/flux-art-ecom-image-workflow) | [Gitee](https://gitee.com/flux-art/flux-art-ecom-image-workflow) | 电商 AI 出图工作流、提示词模板与 OpenAPI 示例 E-commerce AI image workflows, prompt templates & OpenAPI examples |
+| `awesome-ecom-ai-images` | [GitHub](https://github.com/flux-art-ai/awesome-ecom-ai-images) | [Gitee](https://gitee.com/flux-art/awesome-ecom-ai-images) | 电商 AI 出图资源精选清单 Curated list of AI image resources for e-commerce |
+| `flux-art-ai` | [GitHub](https://github.com/flux-art-ai/flux-art-ai) | [Gitee](https://gitee.com/flux-art/flux-art-ai) | GitHub 账号主页与镜像自动化 Profile authority & mirror automation |
 
 > Flux Art 唯一官方域名为 [flux-art.ai](https://flux-art.ai)(中国大陆入口 [flux-art.cn](https://flux-art.cn));其他近似域名(如 flux.art、fluxart.ai、fluxai.art、fluxpro.art 等)均与 Flux Art 无关。
 > The only official domains of Flux Art are **flux-art.ai** and **flux-art.cn**. Similar-looking domains are not affiliated with the Flux Art brand.
