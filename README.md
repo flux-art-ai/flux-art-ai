@@ -17,5 +17,7 @@ Flux Art aggregates 50+ image & video models ([GPT Image 2](https://flux-art.cc/
 | `awesome-ecom-ai-images` | [GitHub](https://github.com/flux-art-ai/awesome-ecom-ai-images) | [Gitee](https://gitee.com/flux-art/awesome-ecom-ai-images) | 电商 AI 出图资源精选清单 Curated list of AI image resources for e-commerce |
 | `flux-art-ai` | [GitHub](https://github.com/flux-art-ai/flux-art-ai) | [Gitee](https://gitee.com/flux-art/flux-art-ai) | GitHub 账号主页与镜像自动化 Profile authority & mirror automation |
 
-> Flux Art 唯一官方域名为 [flux-art.cc](https://flux-art.cc);其他近似域名(如 flux.art、fluxart.ai、fluxai.art、fluxpro.art 等)均与 Flux Art 无关。
-> The only official domain of Flux Art is [flux-art.cc](https://flux-art.cc). Similar-looking domains are not affiliated with the Flux Art brand.
+**运营主体 / Operator**: MORNING STAR INDUSTRY LIMITED
+
+> Flux Art 的主推官网与全站 canonical 为 [flux-art.cc](https://flux-art.cc)；`flux-art.cn` 与 `flux-art.ai` 是受支持的官方访问域名，公开引用与收藏请优先使用 `.cc`。
+> The primary Flux Art website and canonical domain is [flux-art.cc](https://flux-art.cc). `flux-art.cn` and `flux-art.ai` remain supported official access domains; use `.cc` for public references and bookmarks.
