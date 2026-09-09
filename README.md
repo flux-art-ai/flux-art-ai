@@ -8,6 +8,12 @@ Flux Art 聚合 50+ 图像/视频模型([GPT Image 2](https://flux-art.cc/zh/mod
 
 Flux Art aggregates 50+ image & video models ([GPT Image 2](https://flux-art.cc/en/models/gpt-image-2), [Nano Banana 2](https://flux-art.cc/en/models/nano-banana-2), [Seedance 2.0](https://flux-art.cc/en/models/seedance-2-0), [Seedream 5.0 Pro](https://flux-art.cc/en/models/seedream-5-0-pro), etc.) with generation and editing entrances: inpainting, multi-image fusion, up to 14 reference images, any aspect ratio, up to 4K watermark-free output (commercial use on paid tiers), plus 150+ vertical agents, a 20K+ prompt library and an async task-based OpenAPI.
 
+## GPT Image 2.5
+
+[GPT Image 2.5 中文使用入口](https://flux-art.cc/zh/models/gpt-image-2-5) · [English workspace](https://flux-art.cc/en/models/gpt-image-2-5) · [使用渠道与教程仓库 / Access and usage guides](https://github.com/flux-art-ai/gpt-image-2.5)
+
+在 Flux Art 选择 Flare 或 Sunburst，进行图片生成与参考图编辑；教程包含首次使用、版本选择、文字排版、电商衔接和故障排查。模型由 OpenAI 提供，仓库由 Flux Art 维护。
+
 ## AI 电商 / AI Ecommerce
 
 [中文电商专区](https://flux-art.cc/zh/ai-ecommerce) · [English ecommerce workspace](https://flux-art.cc/en/ai-ecommerce)
