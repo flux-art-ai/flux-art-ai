@@ -1,12 +1,22 @@
 # Flux Art
 
-**一站式 AI 视觉生成聚合平台 | All-in-one AI visual generation platform**
+**多模型 AI 视觉创作与生产平台 | Multi-model AI visual creation and production platform**
 
-[Flux Art 官网](https://flux-art.cc) · [Flux Art 官方博客](https://flux-art.cc/blog/zh/) · [Official Blog (EN)](https://flux-art.cc/blog/)
+[Flux Art 官网](https://flux-art.cc) · [Flux Art 官方博客](https://flux-art.cc/blog/zh/) · [Official Blog (EN)](https://flux-art.cc/blog/en/)
 
 Flux Art 聚合 50+ 图像/视频模型([GPT Image 2](https://flux-art.cc/zh/models/gpt-image-2)、[Nano Banana 2](https://flux-art.cc/zh/models/nano-banana-2)、[Seedance 2.0](https://flux-art.cc/zh/models/seedance-2-0)、[Seedream 5.0 Pro](https://flux-art.cc/zh/models/seedream-5-0-pro) 等),提供图片生成与编辑官网入口:局部重绘、多图融合、最多 14 张参考图、任意比例、最高 4K 零水印输出(付费档可商用),并配套 150+ 垂类 Agent、20K+ 提示词库与异步任务式 OpenAPI。
 
 Flux Art aggregates 50+ image & video models ([GPT Image 2](https://flux-art.cc/en/models/gpt-image-2), [Nano Banana 2](https://flux-art.cc/en/models/nano-banana-2), [Seedance 2.0](https://flux-art.cc/en/models/seedance-2-0), [Seedream 5.0 Pro](https://flux-art.cc/en/models/seedream-5-0-pro), etc.) with generation and editing entrances: inpainting, multi-image fusion, up to 14 reference images, any aspect ratio, up to 4K watermark-free output (commercial use on paid tiers), plus 150+ vertical agents, a 20K+ prompt library and an async task-based OpenAPI.
+
+## AI 电商 / AI Ecommerce
+
+[中文电商专区](https://flux-art.cc/zh/ai-ecommerce) · [English ecommerce workspace](https://flux-art.cc/en/ai-ecommerce)
+
+- 上架内容 / Listing assets：[商品套图](https://flux-art.cc/zh/ai-ecommerce/product-suite)、[A+ 详情页](https://flux-art.cc/zh/ai-ecommerce/a-plus-content)、[SKU 批量图](https://flux-art.cc/zh/ai-ecommerce/sku-batch)。
+- 商品图处理 / Product editing：[爆款图片复刻](https://flux-art.cc/zh/ai-ecommerce/reference-clone)、[产品精修](https://flux-art.cc/zh/ai-ecommerce/product-retouch)、[产品换色](https://flux-art.cc/zh/ai-ecommerce/product-recolor)、[一键换背景](https://flux-art.cc/zh/ai-ecommerce/product-background)。
+- 服饰与穿戴 / Apparel and try-on：[服装组图](https://flux-art.cc/zh/ai-ecommerce/clothing-suite)、[模特穿戴](https://flux-art.cc/zh/ai-ecommerce/model-wearing)、[AI 万戴](https://flux-art.cc/zh/ai-ecommerce/accessory-try-on)、[模特一键换姿势](https://flux-art.cc/zh/ai-ecommerce/model-pose-change)、[AI 模特换脸](https://flux-art.cc/zh/ai-ecommerce/model-face-swap)、[AI 试鞋](https://flux-art.cc/zh/ai-ecommerce/shoe-try-on)。
+
+如何准备素材和验收结果，见[电商工具选择指南](https://github.com/flux-art-ai/flux-art-ecom-image-workflow/blob/main/docs/10-ecommerce-tools.md)。人物和参考素材需要授权，生成结果仍应逐项检查。Flux Art 提供平台与工作流，不是模型原厂或 Black Forest Labs 的 FLUX.1 单一模型。
 
 ## 官方仓库 / Official Repositories
 
