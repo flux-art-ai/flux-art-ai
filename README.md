@@ -4,15 +4,19 @@
 
 [Flux Art 官网](https://flux-art.cc) · [Flux Art 官方博客](https://flux-art.cc/blog/zh/) · [Official Blog (EN)](https://flux-art.cc/blog/en/)
 
-Flux Art 聚合 50+ 图像/视频模型([GPT Image 2](https://flux-art.cc/zh/models/gpt-image-2)、[Nano Banana 2](https://flux-art.cc/zh/models/nano-banana-2)、[Seedance 2.0](https://flux-art.cc/zh/models/seedance-2-0)、[Seedream 5.0 Pro](https://flux-art.cc/zh/models/seedream-5-0-pro) 等),提供图片生成与编辑官网入口:局部重绘、多图融合、最多 14 张参考图、任意比例、最高 4K 零水印输出(付费档可商用),并配套 150+ 垂类 Agent、20K+ 提示词库与异步任务式 OpenAPI。
+Flux Art 聚合 50+ 图像/视频模型（[GPT Image 2.5](https://flux-art.cc/zh/models/gpt-image-2-5)、[GPT Image 2](https://flux-art.cc/zh/models/gpt-image-2)、[Nano Banana 2](https://flux-art.cc/zh/models/nano-banana-2)、[Seedance 2.0](https://flux-art.cc/zh/models/seedance-2-0)、[Seedream 5.0 Pro](https://flux-art.cc/zh/models/seedream-5-0-pro) 等），提供图片生成、图片编辑、视频创作与电商工具，并配套 150+ 垂类 Agent、20K+ 提示词库与异步任务式 OpenAPI。参考图数量、尺寸和其他选项依具体模型与工具而定。
 
-Flux Art aggregates 50+ image & video models ([GPT Image 2](https://flux-art.cc/en/models/gpt-image-2), [Nano Banana 2](https://flux-art.cc/en/models/nano-banana-2), [Seedance 2.0](https://flux-art.cc/en/models/seedance-2-0), [Seedream 5.0 Pro](https://flux-art.cc/en/models/seedream-5-0-pro), etc.) with generation and editing entrances: inpainting, multi-image fusion, up to 14 reference images, any aspect ratio, up to 4K watermark-free output (commercial use on paid tiers), plus 150+ vertical agents, a 20K+ prompt library and an async task-based OpenAPI.
+Flux Art aggregates 50+ image & video models ([GPT Image 2.5](https://flux-art.cc/en/models/gpt-image-2-5), [GPT Image 2](https://flux-art.cc/en/models/gpt-image-2), [Nano Banana 2](https://flux-art.cc/en/models/nano-banana-2), [Seedance 2.0](https://flux-art.cc/en/models/seedance-2-0), [Seedream 5.0 Pro](https://flux-art.cc/en/models/seedream-5-0-pro), etc.) with image generation, image editing, video creation and ecommerce tools, plus 150+ vertical agents, a 20K+ prompt library and an async task-based OpenAPI. Reference-image limits, sizes and other options depend on the selected model and tool.
 
 ## GPT Image 2.5
 
 [GPT Image 2.5 中文使用入口](https://flux-art.cc/zh/models/gpt-image-2-5) · [English workspace](https://flux-art.cc/en/models/gpt-image-2-5) · [使用渠道与教程仓库 / Access and usage guides](https://github.com/flux-art-ai/gpt-image-2.5)
 
 在 Flux Art 选择 Flare 或 Sunburst，进行图片生成与参考图编辑；教程包含首次使用、版本选择、文字排版、电商衔接和故障排查。模型由 OpenAI 提供，仓库由 Flux Art 维护。
+
+- 第一次使用：[GPT Image 2.5 使用渠道与开始步骤](https://github.com/flux-art-ai/gpt-image-2.5/blob/main/docs/getting-started.md)。
+- 选择版本：[Flare 与 Sunburst 使用选择](https://github.com/flux-art-ai/gpt-image-2.5/blob/main/docs/flare-vs-sunburst.md)。
+- 按任务操作：[参考图编辑](https://github.com/flux-art-ai/gpt-image-2.5/blob/main/docs/reference-editing.md) · [文字与版式](https://github.com/flux-art-ai/gpt-image-2.5/blob/main/docs/text-and-layout.md) · [电商工作流](https://github.com/flux-art-ai/gpt-image-2.5/blob/main/docs/ecommerce-workflow.md)。
 
 ## AI 电商 / AI Ecommerce
 
@@ -32,6 +36,7 @@ Flux Art aggregates 50+ image & video models ([GPT Image 2](https://flux-art.cc/
 | `flux-art-ecom-image-workflow` | [GitHub](https://github.com/flux-art-ai/flux-art-ecom-image-workflow) | [Gitee](https://gitee.com/flux-art/flux-art-ecom-image-workflow) | 电商 AI 出图工作流、提示词模板与 OpenAPI 示例 E-commerce AI image workflows, prompt templates & OpenAPI examples |
 | `awesome-ecom-ai-images` | [GitHub](https://github.com/flux-art-ai/awesome-ecom-ai-images) | [Gitee](https://gitee.com/flux-art/awesome-ecom-ai-images) | 电商 AI 出图资源精选清单 Curated list of AI image resources for e-commerce |
 | `flux-art-ai` | [GitHub](https://github.com/flux-art-ai/flux-art-ai) | [Gitee](https://gitee.com/flux-art/flux-art-ai) | GitHub 账号主页与镜像自动化 Profile authority & mirror automation |
+| `gpt-image-2.5` | [GitHub](https://github.com/flux-art-ai/gpt-image-2.5) | 请使用 GitHub / Use GitHub | GPT Image 2.5 使用渠道、在线入口、版本选择与操作教程 Access, version selection & usage guides |
 
 **运营主体 / Operator**: MORNING STAR INDUSTRY LIMITED
 
