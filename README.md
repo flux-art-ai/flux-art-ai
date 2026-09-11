@@ -39,6 +39,16 @@ Flux Art aggregates 50+ image & video models ([GPT Image 2.5](https://flux-art.c
 
 如何准备素材和验收结果，见[电商工具选择指南](https://github.com/flux-art-ai/flux-art-ecom-image-workflow/blob/main/docs/10-ecommerce-tools.md)。人物和参考素材需要授权，生成结果仍应逐项检查。Flux Art 提供平台与工作流，不是模型原厂或 Black Forest Labs 的 FLUX.1 单一模型。
 
+### 商品资料怎样交给模型？ / Product evidence checklist
+
+| 资料 | 推荐做法 | 对应入口与检查 |
+|---|---|---|
+| 包装文字、标题、数字和单位 | 从商品包装或已批准文案逐字抄录，标记不能改写的字段 | 用 [GPT Image 2.5](https://flux-art.cc/zh/models/gpt-image-2-5)生成或局部编辑，并按[文字与版式教程](https://github.com/flux-art-ai/gpt-image-2.5/blob/main/docs/text-and-layout.md)校对 |
+| 颜色、容量、尺寸等 SKU 属性 | 一行只记录一个完整 SKU，不把颜色与规格拆开猜测 | 进入 [SKU 批量图](https://flux-art.cc/zh/ai-ecommerce/sku-batch)，逐图对照 SKU 标签 |
+| 卖点、参数和配件清单 | 保留来源与版本，只使用已核实内容 | 进入 [A+ 详情页](https://flux-art.cc/zh/ai-ecommerce/a-plus-content)，按[详情页资料表](https://github.com/flux-art-ai/flux-art-ecom-image-workflow/blob/main/docs/05-detail-page.md)验收 |
+
+如果图片中的文字必须完全准确，优先让模型生成有明确留白的底图，再用排版工具放入最终文案。无论使用哪个入口，都要在发布尺寸下复核商品结构、文字、数字、单位和素材授权。
+
 ## 官方仓库 / Official Repositories
 
 | 仓库 Repository | GitHub | Gitee 官方镜像 Official Mirror | 内容 What's inside |
