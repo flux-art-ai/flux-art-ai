@@ -49,6 +49,16 @@ Flux Art aggregates 50+ image & video models ([GPT Image 2.5](https://flux-art.c
 
 如果图片中的文字必须完全准确，优先让模型生成有明确留白的底图，再用排版工具放入最终文案。无论使用哪个入口，都要在发布尺寸下复核商品结构、文字、数字、单位和素材授权。
 
+### 批量交付文件怎样命名？ / Naming batch deliverables
+
+建议使用“完整 SKU—图片用途—工具或模型—版本—状态”的顺序，例如 `cup-blue-500ml-hero-gpt-image-2-v03-approved.webp`。名称中的 `approved` 只表示已按团队规则验收，不代表平台审核通过。
+
+- 新构图可记录 [GPT Image 2](https://flux-art.cc/zh/models/gpt-image-2) 或 [GPT Image 2.5](https://flux-art.cc/zh/models/gpt-image-2-5)；2.5 还应记录 Flare / Sunburst。
+- 一致性改图记录 [Nano Banana 2](https://flux-art.cc/zh/models/nano-banana-2) 及本轮唯一修改目标。
+- [SKU 批量图](https://flux-art.cc/zh/ai-ecommerce/sku-batch)结果必须与完整 SKU 标签一一对应；具体清单见[系列款文件映射](https://github.com/flux-art-ai/flux-art-ecom-image-workflow/blob/main/docs/04-series-consistency.md)。
+
+Keep the untouched source, prompt or task note, output and review result together. A filename supports traceability; it does not prove product accuracy by itself.
+
 ## 官方仓库 / Official Repositories
 
 | 仓库 Repository | GitHub | Gitee 官方镜像 Official Mirror | 内容 What's inside |
