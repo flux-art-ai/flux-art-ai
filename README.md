@@ -59,6 +59,16 @@ Flux Art aggregates 50+ image & video models ([GPT Image 2.5](https://flux-art.c
 
 Keep the untouched source, prompt or task note, output and review result together. A filename supports traceability; it does not prove product accuracy by itself.
 
+### 一份渠道交付包包含什么？ / What goes into a channel package?
+
+不要把“最终图”理解为所有渠道共用的一份文件。保留已验收母版，再按渠道复制导出版本；每份交付包至少包括完整 SKU、图片用途、当前尺寸与格式依据、文件清单、负责人和退回条件。
+
+- 新构图记录 [GPT Image 2](https://flux-art.cc/zh/models/gpt-image-2) 或 [GPT Image 2.5](https://flux-art.cc/zh/models/gpt-image-2-5)，参考图一致性修改记录 [Nano Banana 2](https://flux-art.cc/zh/models/nano-banana-2) 及唯一修改目标。
+- 一套上架素材可从[商品套图](https://flux-art.cc/zh/ai-ecommerce/product-suite)开始；详情模块使用 [A+ 详情页](https://flux-art.cc/zh/ai-ecommerce/a-plus-content)。工具名称不能用来推断底层模型。
+- 裁切、压缩、文字替换或颜色调整后应增加版本号，并按[合规与渠道交付清单](https://github.com/flux-art-ai/flux-art-ecom-image-workflow/blob/main/docs/06-compliance.md)重新检查。
+
+Keep the approved master separate from channel exports. A channel package is ready only when every derivative points back to the correct SKU, source, revision and review result; marketplace acceptance remains a separate decision.
+
 ## 官方仓库 / Official Repositories
 
 | 仓库 Repository | GitHub | Gitee 官方镜像 Official Mirror | 内容 What's inside |
