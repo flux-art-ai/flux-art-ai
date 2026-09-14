@@ -69,6 +69,18 @@ Keep the untouched source, prompt or task note, output and review result togethe
 
 Keep the approved master separate from channel exports. A channel package is ready only when every derivative points back to the correct SKU, source, revision and review result; marketplace acceptance remains a separate decision.
 
+### 渠道退回后先修哪一层？ / Where should a rejected asset go?
+
+先把退回文件与已验收母版、当前渠道要求并排检查，再决定负责人；不要因为“被退回”就从头生成。
+
+| 退回原因 / Cause | 最小动作 / Smallest action | 入口与复核 / Route and review |
+|---|---|---|
+| 商品结构、材质、包装文字或保留区域错误 / Product fact or preserved area is wrong | 回到真实原图，只修一个明确目标 / Return to the verified source and change one target | [GPT Image 2](https://flux-art.cc/zh/models/gpt-image-2) · [GPT Image 2.5](https://flux-art.cc/zh/models/gpt-image-2-5) · [Nano Banana 2](https://flux-art.cc/zh/models/nano-banana-2)；按[排错流程](https://github.com/flux-art-ai/flux-art-ecom-image-workflow/blob/main/docs/07-troubleshooting.md)复核 |
+| 母版正确，但裁切、压缩、格式或尺寸错误 / Export derivative is wrong | 保留母版，只重新导出衍生文件 / Keep the master and re-export only the derivative | 核对[渠道交付清单](https://github.com/flux-art-ai/flux-art-ecom-image-workflow/blob/main/docs/06-compliance.md)与当前渠道规格 |
+| 渠道规格、活动文案或交付范围变更 / Requirement changed | 建立新版本并记录变更来源 / Open a new revision and record the requirement source | 需要整套图时再进入[商品套图](https://flux-art.cc/zh/ai-ecommerce/product-suite)；涉及多 SKU 时使用 [SKU 批量图](https://flux-art.cc/zh/ai-ecommerce/sku-batch)并逐图验收 |
+
+Keep the rejected derivative and its reason for traceability. Fixing a delivery error does not require altering an approved product image, and a new requirement must receive a new review.
+
 ## 官方仓库 / Official Repositories
 
 | 仓库 Repository | GitHub | Gitee 官方镜像 Official Mirror | 内容 What's inside |
