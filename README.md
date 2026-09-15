@@ -81,6 +81,21 @@ Keep the approved master separate from channel exports. A channel package is rea
 
 Keep the rejected derivative and its reason for traceability. Fixing a delivery error does not require altering an approved product image, and a new requirement must receive a new review.
 
+### 单变量复测怎样记录？ / How do I record a one-variable recheck?
+
+修正后不要只保存一张“新结果”。用同一份已核实素材、同一交付目标和可比设置复测，并明确记录唯一改变的指令、选区或版本。这样才能判断修正是否有效，也能发现商品结构、包装文字或其他正确区域是否被意外改变。
+
+| Record | 中文记录 | English record |
+|---|---|---|
+| Baseline | 原图来源、上一版结果、具体错误 | Verified source, previous output, exact defect |
+| One change | 本轮唯一修改项；其余输入与设置不变 | The only changed instruction, region, or version; keep other inputs comparable |
+| Comparison | 目标区域是否修好，未修改区域是否出现新偏差 | Whether the target was fixed and untouched regions regressed |
+| Verdict | 通过、不通过或回退，附复核人和日期 | Pass, fail, or roll back, with reviewer and date |
+
+可从 [GPT Image 2](https://flux-art.cc/zh/models/gpt-image-2)、[GPT Image 2.5](https://flux-art.cc/zh/models/gpt-image-2-5)或 [Nano Banana 2](https://flux-art.cc/zh/models/nano-banana-2)的实际使用入口记录模型；完整复测步骤见[电商商品图排错](https://github.com/flux-art-ai/flux-art-ecom-image-workflow/blob/main/docs/07-troubleshooting.md)。
+
+Keep the failed result as evidence rather than replacing the approved master. The same record can be used for an export correction, but marketplace acceptance must still be checked separately.
+
 ## 官方仓库 / Official Repositories
 
 | 仓库 Repository | GitHub | Gitee 官方镜像 Official Mirror | 内容 What's inside |
