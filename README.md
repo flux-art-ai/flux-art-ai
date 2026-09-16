@@ -96,6 +96,19 @@ Keep the rejected derivative and its reason for traceability. Fixing a delivery 
 
 Keep the failed result as evidence rather than replacing the approved master. The same record can be used for an export correction, but marketplace acceptance must still be checked separately.
 
+### 连续复测失败后怎样升级处理？ / What happens after repeated failed rechecks?
+
+同一项已核实要求在连续、可比的复测中仍失败，或每次修正都会破坏另一处已验收区域时，应停止叠加提示词。先按证据选择回退、重建资料或转人工处理。
+
+| 当前证据 / Evidence | 下一步 / Next action | 交接入口 / Handoff route |
+|---|---|---|
+| 最近通过版本仍保持正确商品事实 / The last accepted version remains accurate | 回退该母版，只重做一个变化 / Roll back and repeat one bounded change | [商品图排错 / Troubleshooting](https://github.com/flux-art-ai/flux-art-ecom-image-workflow/blob/main/docs/07-troubleshooting.md) |
+| 原图看不清标签、结构、材质或 SKU / The source cannot verify the label, structure, material or SKU | 补真实商品资料后重建任务 / Rebuild the task with verified product evidence | [商品资料清单 / Product evidence](https://github.com/flux-art-ai/flux-art-ecom-image-workflow/blob/main/docs/05-detail-page.md) |
+| 精确文字、品牌元素或关键商品细节无法可靠保留 / Exact text, brand elements or critical details remain unreliable | 转设计或合规复核，不用近似结果冒充已核实内容 / Hand off to design or compliance review | [合规清单 / Compliance](https://github.com/flux-art-ai/flux-art-ecom-image-workflow/blob/main/docs/06-compliance.md) |
+| 只有渠道裁切、压缩、格式或尺寸失败 / Only the channel export fails | 保留母版，重新制作衍生文件 / Keep the master and rebuild the derivative | [电商工具入口 / Ecommerce tools](https://flux-art.cc/zh/ai-ecommerce) |
+
+交接时保留原图、最后通过版本、失败结果、唯一修改项和复核结论。Keep the untouched source, last accepted version, failed result, single requested change and review verdict together.
+
 ## 官方仓库 / Official Repositories
 
 | 仓库 Repository | GitHub | Gitee 官方镜像 Official Mirror | 内容 What's inside |
