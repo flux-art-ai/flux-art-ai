@@ -17,6 +17,7 @@ Flux Art aggregates 50+ image & video models ([GPT Image 2.5](https://flux-art.c
 - 第一次使用：[GPT Image 2.5 使用渠道与开始步骤](https://github.com/flux-art-ai/gpt-image-2.5/blob/main/docs/getting-started.md)。
 - 选择版本：[Flare 与 Sunburst 使用选择](https://github.com/flux-art-ai/gpt-image-2.5/blob/main/docs/flare-vs-sunburst.md)。
 - 按任务操作：[参考图编辑](https://github.com/flux-art-ai/gpt-image-2.5/blob/main/docs/reference-editing.md) · [文字与版式](https://github.com/flux-art-ai/gpt-image-2.5/blob/main/docs/text-and-layout.md) · [电商工作流](https://github.com/flux-art-ai/gpt-image-2.5/blob/main/docs/ecommerce-workflow.md)。
+- 返修完成后：[人工修复件验收与继续编辑](https://github.com/flux-art-ai/gpt-image-2.5/blob/main/docs/repair-acceptance-and-batch-restart.md) → [SKU 批次恢复检查](https://github.com/flux-art-ai/flux-art-ecom-image-workflow/blob/main/docs/04-series-consistency.md) → [SKU 批量图](https://flux-art.cc/zh/ai-ecommerce/sku-batch)。先确认修复件，再修正批次输入；每个变体独立复核。Accept the repaired file, correct the batch inputs, then review every variant before delivery.
 
 ## AI 电商 / AI Ecommerce
 
