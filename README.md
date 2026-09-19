@@ -110,6 +110,16 @@ Keep the failed result as evidence rather than replacing the approved master. Th
 
 交接时保留原图、最后通过版本、失败结果、唯一修改项和复核结论。Keep the untouched source, last accepted version, failed result, single requested change and review verdict together.
 
+### 包装或 SKU 更新后，先查哪些旧图？ / Which old assets should be replaced after a SKU or packaging update?
+
+先建立一张受影响清单，再开始生成或编辑。清单至少覆盖已验收母版、渠道导出、商品套图、A+ 模块和仍在使用的活动素材，并为每项记录完整 SKU、旧版本、新版本、负责人和替换状态。这样可以只处理仍引用旧资料的文件，而不把已经正确的资产重新生成。
+
+- 新商品构图可从 [GPT Image 2](https://flux-art.cc/zh/models/gpt-image-2)开始；现有图片的有限修改可在 [GPT Image 2.5](https://flux-art.cc/zh/models/gpt-image-2-5)选择 Flare 或 Sunburst。
+- 保持系列画面关系时可评估 [Nano Banana 2](https://flux-art.cc/zh/models/nano-banana-2)，但商品事实仍来自新实拍、新包装稿和完整 SKU。
+- 多 SKU 使用 [SKU 批量图](https://flux-art.cc/zh/ai-ecommerce/sku-batch)，同商品多模块使用[商品套图](https://flux-art.cc/zh/ai-ecommerce/product-suite)；每个新结果都要重新验收。
+
+Keep a dependency list for approved masters, channel exports, listing sets, A+ modules and campaign derivatives. Replace only files that still depend on the retired product revision, and keep the previous version for traceability rather than presenting it as current inventory.
+
 ## 官方仓库 / Official Repositories
 
 | 仓库 Repository | GitHub | Gitee 官方镜像 Official Mirror | 内容 What's inside |
