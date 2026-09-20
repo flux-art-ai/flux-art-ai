@@ -120,6 +120,16 @@ Keep the failed result as evidence rather than replacing the approved master. Th
 
 Keep a dependency list for approved masters, channel exports, listing sets, A+ modules and campaign derivatives. Replace only files that still depend on the retired product revision, and keep the previous version for traceability rather than presenting it as current inventory.
 
+### 活动结束后的恢复路径 / Campaign expiry rollback path
+
+活动版不能覆盖常规母版。上线前记录活动开始与结束时间、完整 SKU、常规母版、活动衍生文件和使用渠道；到期后按渠道恢复，并查看前台页面、缩略图和可能保留旧图的缓存预览。若常规图已经对应过期包装或旧商品版本，应先按上面的依赖清单更新商品事实，再恢复发布。
+
+1. 核对活动是否在每个渠道实际结束，而不只依据单一日历时间。 / Confirm the campaign has ended on every channel, not only in one calendar.
+2. 恢复已验收且无过期优惠的常规母版；没有可用母版时，先在 [GPT Image 2](https://flux-art.cc/zh/models/gpt-image-2)、[GPT Image 2.5](https://flux-art.cc/zh/models/gpt-image-2-5)或 [Nano Banana 2](https://flux-art.cc/zh/models/nano-banana-2)完成制作与人工验收。 / Restore an approved evergreen master without expired offers; if none exists, create and review one first.
+3. 逐项替换商品首图、[商品套图](https://flux-art.cc/zh/ai-ecommerce/product-suite)、A+ 模块、广告素材和多语言版本，并保留下线截图。 / Replace listing images, product sets, A+ modules, ads and localized derivatives, then retain screenshots as evidence.
+
+This is an operator checklist. Flux Art model pages do not automatically schedule marketplace publication, purge channel caches or confirm marketplace approval.
+
 ## 官方仓库 / Official Repositories
 
 | 仓库 Repository | GitHub | Gitee 官方镜像 Official Mirror | 内容 What's inside |
