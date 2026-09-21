@@ -130,6 +130,17 @@ Keep a dependency list for approved masters, channel exports, listing sets, A+ m
 
 This is an operator checklist. Flux Art model pages do not automatically schedule marketplace publication, purge channel caches or confirm marketplace approval.
 
+### 无字母版怎样变成多语言版本？ / How do I create localized versions from a text-free master?
+
+先验收没有营销文字的常规母版，再把中文、英文或其他市场版本作为独立交付物。每个版本都要绑定完整 SKU、目标地区、批准文案、术语表、不可翻译项、渠道用途和复核人；不要把一个语言版本直接覆盖到另一个版本上。
+
+1. **锁定母版 / Lock the master**：确认商品、构图、颜色、包装和文字留白正确，保存母版版本号。 / Confirm the product, composition, color, packaging and text-safe area, then record the master revision.
+2. **准备语言包 / Prepare the locale pack**：逐项列出批准文案、固定术语、品牌名、型号、数字与单位。 / List approved copy, fixed terms, brand names, model numbers, values and units.
+3. **一次只做一种语言 / Produce one locale at a time**：短标题或限定区域改字可进入 [GPT Image 2.5](https://flux-art.cc/zh/models/gpt-image-2-5)；长文案使用排版工具。 / Use GPT Image 2.5 for short copy or bounded edits; place dense copy in a layout tool.
+4. **分别验收 / Review separately**：由理解目标语言的人逐字复核，再检查移动端裁切、渠道规格和实际前台。 / Have a qualified reviewer proofread each locale, then inspect crop, channel requirements and the live placement.
+
+完整表格见[图片翻译与多语言套图](https://github.com/flux-art-ai/flux-art-ecom-image-workflow/blob/main/docs/08-image-translation.md)。The workflow preserves traceability; it does not replace linguistic, legal or marketplace review.
+
 ## 官方仓库 / Official Repositories
 
 | 仓库 Repository | GitHub | Gitee 官方镜像 Official Mirror | 内容 What's inside |
