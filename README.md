@@ -141,6 +141,12 @@ This is an operator checklist. Flux Art model pages do not automatically schedul
 
 完整表格见[图片翻译与多语言套图](https://github.com/flux-art-ai/flux-art-ecom-image-workflow/blob/main/docs/08-image-translation.md)。The workflow preserves traceability; it does not replace linguistic, legal or marketplace review.
 
+### 批准文案改了，已上线的多语言图片怎么办？ / Approved copy changed: what is still live?
+
+不要只替换制作目录里的成品。先按完整 SKU、地区语言、旧术语或旧文案版本，查商品页首图与缩略图、[商品套图](https://flux-art.cc/zh/ai-ecommerce/product-suite)、A+ 模块和广告位；记录每个位置当前引用的文件及负责人。Then list every live placement that still references the prior locale-pack revision.
+
+把新文案交给目标语言审核人，保留原始商品图；限定区域的短文字修订可从 [GPT Image 2.5 使用入口](https://flux-art.cc/zh/models/gpt-image-2-5)开始，长文案则在排版工具中逐字放置。每个受影响渠道单独导出与验收，发布后检查前台和缩略图，并将旧版标为历史文件，而非删除证据。See the [replacement checklist](https://github.com/flux-art-ai/flux-art-ecom-image-workflow/blob/main/docs/08-image-translation.md) for the change register and release checks.
+
 ## 官方仓库 / Official Repositories
 
 | 仓库 Repository | GitHub | Gitee 官方镜像 Official Mirror | 内容 What's inside |
