@@ -147,6 +147,16 @@ This is an operator checklist. Flux Art model pages do not automatically schedul
 
 把新文案交给目标语言审核人，保留原始商品图；限定区域的短文字修订可从 [GPT Image 2.5 使用入口](https://flux-art.cc/zh/models/gpt-image-2-5)开始，长文案则在排版工具中逐字放置。每个受影响渠道单独导出与验收，发布后检查前台和缩略图，并将旧版标为历史文件，而非删除证据。See the [replacement checklist](https://github.com/flux-art-ai/flux-art-ecom-image-workflow/blob/main/docs/08-image-translation.md) for the change register and release checks.
 
+### 用户说商品图与实物不符，如何处理？ / A customer reports that the image differs from the product
+
+先保存反馈、当前页面截图、文件版本和完整 SKU，暂停继续使用被指出的文件；同时保留原图与最后通过版本，不用新生成结果覆盖证据。Capture the report, live placement, asset revision and complete SKU before changing the image.
+
+1. 对照实物、批准包装稿、色卡或规格资料，标出结构、颜色、材质、文字或配件的具体差异。 / Compare the image with verified product evidence and mark the exact mismatch.
+2. 只修一个有依据的目标：新构图可评估 [GPT Image 2](https://flux-art.cc/zh/models/gpt-image-2)，有限编辑可在 [GPT Image 2.5](https://flux-art.cc/zh/models/gpt-image-2-5)选择 Flare 或 Sunburst，一致性编辑可比较 [Nano Banana 2](https://flux-art.cc/zh/models/nano-banana-2)。 / Change one verified target and keep the remaining areas stable.
+3. 重新检查商品页、缩略图、[商品套图](https://flux-art.cc/zh/ai-ecommerce/product-suite)、A+ 模块和广告位；前台仍显示问题版本时不关闭反馈。 / Recheck every affected live placement before closing the report.
+
+详细字段见[上线商品图反馈处置清单](https://github.com/flux-art-ai/flux-art-ecom-image-workflow/blob/main/docs/06-compliance.md)。Do not put customer contact details, private order data or account credentials into a public repository record.
+
 ## 官方仓库 / Official Repositories
 
 | 仓库 Repository | GitHub | Gitee 官方镜像 Official Mirror | 内容 What's inside |
