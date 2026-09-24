@@ -157,6 +157,16 @@ This is an operator checklist. Flux Art model pages do not automatically schedul
 
 详细字段见[上线商品图反馈处置清单](https://github.com/flux-art-ai/flux-art-ecom-image-workflow/blob/main/docs/06-compliance.md)。Do not put customer contact details, private order data or account credentials into a public repository record.
 
+### 看不见的商品细节不能靠生成补齐 / Do not generate missing product evidence
+
+如果参考图没有显示背面、接口、包装小字或装箱配件，先暂停会展示这些信息的任务。补拍应使用同一完整 SKU，并为每张照片记录正面、背面、侧面、底部、接口近照或包装文字等职责；不同颜色、容量或包装版本不要混在同一组参考图里。
+
+- 背面和接口缺失：补正视照片及数量、位置说明，再制作多角度图或结构特写。
+- 包装字不可读：取得批准包装稿或清晰近拍，再进行 [GPT Image 2.5 限定编辑](https://flux-art.cn/zh/models/gpt-image-2-5)。
+- 配件不明确：先核对装箱清单；没有证据时不生成开箱图、赠品图或配件组合。
+
+If the source does not show the back, ports, small packaging copy or included accessories, pause any deliverable that exposes those facts. Capture the same SKU from the missing angle, label every source image, and resume only after the evidence package is complete. See the [reference-image stop conditions](https://github.com/flux-art-ai/flux-art-ecom-image-workflow/blob/main/docs/03-scene-fusion.md).
+
 ## 官方仓库 / Official Repositories
 
 | 仓库 Repository | GitHub | Gitee 官方镜像 Official Mirror | 内容 What's inside |
