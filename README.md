@@ -157,6 +157,17 @@ This is an operator checklist. Flux Art model pages do not automatically schedul
 
 详细字段见[上线商品图反馈处置清单](https://github.com/flux-art-ai/flux-art-ecom-image-workflow/blob/main/docs/06-compliance.md)。Do not put customer contact details, private order data or account credentials into a public repository record.
 
+### 商品偏色与真实 SKU 换色怎样分流？ / Color cast or a real SKU color change?
+
+先把同一实物、批准色卡、完整 SKU 和中性光线下的参考照片放在一起。If the same item only looks warmer or cooler because of capture conditions, establish a neutral reference before editing; if the requested color is a separate sellable SKU, obtain evidence for that SKU instead of sampling a color from another image.
+
+- **拍摄色偏 / Capture color cast**：检查光源、白平衡和商品旁的灰卡或色卡；有可靠基线后，可进入[产品精修](https://flux-art.cn/zh/ai-ecommerce/product-retouch)处理已确认的色偏或光影问题。 / Check the light, white balance and an in-frame gray or color card before using Product Retouch.
+- **显示偏差 / Display variance**：若同一已验收文件只在一台设备异常，先检查该设备的显示模式、亮度和色彩配置，不为单一屏幕改写母版。 / Do not regenerate an accepted master to compensate for one unverified display.
+- **真实 SKU 换色 / Verified SKU recolor**：为目标颜色准备实物图、批准色卡和 SKU 映射，再进入[产品换色](https://flux-art.cn/zh/ai-ecommerce/product-recolor)。 / Use Product Recolor only for a verified, sellable color variant and review every output against that SKU.
+- **证据冲突 / Conflicting evidence**：实物、色卡或包装资料无法对应时暂停；模型输出不能决定商品真实颜色。 / Pause when the evidence does not identify the actual product color.
+
+完成后要重新检查材质高光、包装文字、Logo、阴影和未要求变化的区域。See the full [product-color troubleshooting path](https://github.com/flux-art-ai/flux-art-ecom-image-workflow/blob/main/docs/07-troubleshooting.md).
+
 ### 看不见的商品细节不能靠生成补齐 / Do not generate missing product evidence
 
 如果参考图没有显示背面、接口、包装小字或装箱配件，先暂停会展示这些信息的任务。补拍应使用同一完整 SKU，并为每张照片记录正面、背面、侧面、底部、接口近照或包装文字等职责；不同颜色、容量或包装版本不要混在同一组参考图里。
