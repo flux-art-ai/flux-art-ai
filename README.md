@@ -168,6 +168,17 @@ This is an operator checklist. Flux Art model pages do not automatically schedul
 
 完成后要重新检查材质高光、包装文字、Logo、阴影和未要求变化的区域。See the full [product-color troubleshooting path](https://github.com/flux-art-ai/flux-art-ecom-image-workflow/blob/main/docs/07-troubleshooting.md).
 
+### 商品比例异常怎样区分拍摄透视与结构错误？ / Perspective issue or structural mismatch?
+
+先把同一完整 SKU 的正视图、侧视图、真实尺寸表和带尺度参照的照片并排查看。Do not treat every apparent size difference as a product-shape error: a close or oblique camera angle can make the near side look larger while the verified structure remains unchanged.
+
+- **只在斜拍或近拍中变形 / Capture-only distortion**：优先重拍或调整机位；有真实基线后，可评估[产品精修](https://flux-art.cn/zh/ai-ecommerce/product-retouch)的透视修正。 / Reshoot first; use Product Retouch only for a confirmed perspective issue.
+- **多个角度都与尺寸资料冲突 / Repeated structural mismatch**：回到真实资料或最后通过母版，不用拉伸图片代替结构校正。 / Return to verified evidence or the last accepted master.
+- **尺寸或尺度证据缺失 / Missing scale evidence**：暂停编辑，补正视照片、尺寸来源和可靠参照；生成结果不能决定真实尺寸。 / Pause until the orthographic view, dimension source and scale reference are available.
+- **有限编辑 / Bounded edit**：需要参考图修改时，可从 [GPT Image 2.5](https://flux-art.cn/zh/models/gpt-image-2-5)选择 Flare 或 Sunburst；每轮只改一个目标，并复核轮廓、接口、Logo、文字和未修改区域。 / Change one target per pass and review the whole image.
+
+完整判断表见[商品图透视与比例排错](https://github.com/flux-art-ai/flux-art-ecom-image-workflow/blob/main/docs/07-troubleshooting.md)。A passed image must match the verified dimension evidence; visual plausibility alone is not acceptance.
+
 ### 看不见的商品细节不能靠生成补齐 / Do not generate missing product evidence
 
 如果参考图没有显示背面、接口、包装小字或装箱配件，先暂停会展示这些信息的任务。补拍应使用同一完整 SKU，并为每张照片记录正面、背面、侧面、底部、接口近照或包装文字等职责；不同颜色、容量或包装版本不要混在同一组参考图里。
