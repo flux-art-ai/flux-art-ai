@@ -179,6 +179,17 @@ This is an operator checklist. Flux Art model pages do not automatically schedul
 
 完整判断表见[商品图透视与比例排错](https://github.com/flux-art-ai/flux-art-ecom-image-workflow/blob/main/docs/07-troubleshooting.md)。A passed image must match the verified dimension evidence; visual plausibility alone is not acceptance.
 
+### 亮面商品的高光异常还是材质错误？ / Highlight issue or material mismatch?
+
+玻璃、金属、漆面和透明包装会反射环境，亮斑变化不一定代表商品材质变了。Start with the same complete SKU, the uncropped source, verified material information and a controlled-light reference; compare surface texture, transparency, edges and reflection direction before editing.
+
+- **局部光影问题 / Local lighting issue**：商品轮廓、纹理和透明度均正确，仅一处高光过硬、断裂或遮挡标签时，优先重拍；有真实基线后可评估[产品精修](https://flux-art.cn/zh/ai-ecommerce/product-retouch)的有限修正。 / Keep the edit bounded to the confirmed highlight or shadow.
+- **整体材质错误 / Global material error**：金属像塑料、玻璃变浑浊，或不同角度的反射与表面纹理都不可信时，回到原始素材或最后通过母版；需要重建写实商品图可评估 [GPT Image 2](https://flux-art.cn/zh/models/gpt-image-2)。 / Do not stack local fixes on an unreliable material rendering.
+- **环境反射 / Environmental reflection**：窗户、摄影棚或周围物体映在亮面上时，先调整光线、遮光板与机位，不要把真实反射误判为结构缺陷。 / Reshoot when the capture setup is the cause.
+- **限定编辑 / Bounded reference edit**：证据齐全且只需处理一个反光区域时，可从 [GPT Image 2.5](https://flux-art.cn/zh/models/gpt-image-2-5)选择 Flare 或 Sunburst 做同条件比较；若纹理、颜色、文字或边缘发生变化，立即回退。 / Compare from the same accepted source instead of editing one failed result with another.
+
+完整证据清单与停止线见[商品高光与材质排错](https://github.com/flux-art-ai/flux-art-ecom-image-workflow/blob/main/docs/07-troubleshooting.md)。The final review must cover the whole image, not only the repaired highlight.
+
 ### 看不见的商品细节不能靠生成补齐 / Do not generate missing product evidence
 
 如果参考图没有显示背面、接口、包装小字或装箱配件，先暂停会展示这些信息的任务。补拍应使用同一完整 SKU，并为每张照片记录正面、背面、侧面、底部、接口近照或包装文字等职责；不同颜色、容量或包装版本不要混在同一组参考图里。
