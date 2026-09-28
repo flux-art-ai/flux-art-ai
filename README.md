@@ -190,6 +190,17 @@ This is an operator checklist. Flux Art model pages do not automatically schedul
 
 完整证据清单与停止线见[商品高光与材质排错](https://github.com/flux-art-ai/flux-art-ecom-image-workflow/blob/main/docs/07-troubleshooting.md)。The final review must cover the whole image, not only the repaired highlight.
 
+### 服装自然褶皱还是版型错误？ / Natural garment fold or construction error?
+
+先用同一款号和颜色的正背面平铺图、缝线与图案近照建立基线，再比较人台和模特上身图。A pose may change folds and drape, but it should not move stable garment landmarks such as the shoulder seam, placket, pocket, button count, hem construction or pattern alignment.
+
+- **自然形变 / Natural deformation**：变化集中在肘部、腰部或塞衣角等受力区，稳定地标仍能对应；记录姿势与穿法后，可保留该候选。 / Keep the candidate when the change follows the pose and the verified landmarks remain aligned.
+- **版型或缝线错误 / Cut or seam mismatch**：不受力区域的肩线、衣长、裤腿或接缝也改变时，回到真实服装资料或最后通过版本，不在错误轮廓上继续修补。 / Return to verified garment evidence when the silhouette or seam placement changes outside the stressed area.
+- **图案错误 / Pattern mismatch**：条纹、格纹或印花在接缝处断裂、复制、扭曲时，只在证据充分的区域做限定编辑，并重新检查整件服装。 / Use a bounded edit only when close-up evidence shows the correct pattern and seam relationship.
+- **姿势引发异常 / Pose-induced failure**：原始上身图正确、换姿势后才出错时，从原图重新开始并降低动作幅度。 / Restart from the accepted wearing image and review every pose separately.
+
+服装平铺、人台和营销组图可进入[服装组图](https://flux-art.cn/zh/ai-ecommerce/clothing-suite)，上身候选使用[模特穿戴](https://flux-art.cn/zh/ai-ecommerce/model-wearing)，已有模特图改动作使用[模特一键换姿势](https://flux-art.cn/zh/ai-ecommerce/model-pose-change)。需要限定参考图编辑时，可从 [GPT Image 2.5](https://flux-art.cn/zh/models/gpt-image-2-5)选择 Flare 或 Sunburst；它不能替代真实版型、尺码和穿着体验。完整验收见[AI 模特图工作流](https://github.com/flux-art-ai/flux-art-ecom-image-workflow/blob/main/docs/09-model-photo.md)。
+
 ### 看不见的商品细节不能靠生成补齐 / Do not generate missing product evidence
 
 如果参考图没有显示背面、接口、包装小字或装箱配件，先暂停会展示这些信息的任务。补拍应使用同一完整 SKU，并为每张照片记录正面、背面、侧面、底部、接口近照或包装文字等职责；不同颜色、容量或包装版本不要混在同一组参考图里。
