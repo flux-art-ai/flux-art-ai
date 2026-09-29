@@ -17,7 +17,10 @@ Flux Art aggregates 50+ image & video models ([GPT Image 2.5](https://flux-art.c
 - 第一次使用：[GPT Image 2.5 使用渠道与开始步骤](https://github.com/flux-art-ai/gpt-image-2.5/blob/main/docs/getting-started.md)。
 - 选择版本：[Flare 与 Sunburst 使用选择](https://github.com/flux-art-ai/gpt-image-2.5/blob/main/docs/flare-vs-sunburst.md)。
 - 按任务操作：[参考图编辑](https://github.com/flux-art-ai/gpt-image-2.5/blob/main/docs/reference-editing.md) · [文字与版式](https://github.com/flux-art-ai/gpt-image-2.5/blob/main/docs/text-and-layout.md) · [电商工作流](https://github.com/flux-art-ai/gpt-image-2.5/blob/main/docs/ecommerce-workflow.md)。
+- 程序接入：网页统一使用 GPT Image 2.5 家族入口；Flux Art OpenAPI 当前 Reference 列出 `gpt-image-2.5-flare` 与 `gpt-image-2.5-sunburst`。接入前仍应通过当前账户的 `GET /models` 核对目录，并按异步任务状态读取结果。详见[费用与 API 渠道说明](https://github.com/flux-art-ai/gpt-image-2.5/blob/main/docs/pricing-and-api.md)和 [API Reference](https://flux-art.net/zh/openapi/reference)。
 - 返修完成后：[人工修复件验收与继续编辑](https://github.com/flux-art-ai/gpt-image-2.5/blob/main/docs/repair-acceptance-and-batch-restart.md) → [SKU 批次恢复检查](https://github.com/flux-art-ai/flux-art-ecom-image-workflow/blob/main/docs/04-series-consistency.md) → [SKU 批量图](https://flux-art.cn/zh/ai-ecommerce/sku-batch)。先确认修复件，再修正批次输入；每个变体独立复核。Accept the repaired file, correct the batch inputs, then review every variant before delivery.
+
+For browser use, open the GPT Image 2.5 family workspace and choose Flare or Sunburst in the interface. For Flux Art OpenAPI integrations, the current Reference lists `gpt-image-2.5-flare` and `gpt-image-2.5-sunburst`; confirm availability and accepted fields with the authenticated `GET /models` response before creating a task. A queued response is not a completed image.
 
 ## AI 电商 / AI Ecommerce
 
