@@ -204,6 +204,17 @@ This is an operator checklist. Flux Art model pages do not automatically schedul
 
 服装平铺、人台和营销组图可进入[服装组图](https://flux-art.cn/zh/ai-ecommerce/clothing-suite)，上身候选使用[模特穿戴](https://flux-art.cn/zh/ai-ecommerce/model-wearing)，已有模特图改动作使用[模特一键换姿势](https://flux-art.cn/zh/ai-ecommerce/model-pose-change)。需要限定参考图编辑时，可从 [GPT Image 2.5](https://flux-art.cn/zh/models/gpt-image-2-5)选择 Flare 或 Sunburst；它不能替代真实版型、尺码和穿着体验。完整验收见[AI 模特图工作流](https://github.com/flux-art-ai/flux-art-ecom-image-workflow/blob/main/docs/09-model-photo.md)。
 
+### AI 试鞋怎样从商品图走到上脚候选？ / How do I turn shoe photos into a try-on candidate?
+
+先用同一完整 SKU 的多角度实拍确认鞋型和部件，再进入 [AI 试鞋](https://flux-art.cn/zh/ai-ecommerce/shoe-try-on)。Start with verified photos of the same complete SKU before opening [AI Shoe Try-on](https://flux-art.cn/en/ai-ecommerce/shoe-try-on); a try-on visual is a styling asset, not evidence of fit, comfort or sizing.
+
+- **输入 / Inputs**：页面当前支持 1–4 张鞋履图，建议补正面、侧面、背面或鞋底；选择 AI 或已获授权的自定义模特。 / The current page accepts 1–4 shoe images and suggests front, side, rear or sole views; choose an AI model or an authorized custom model.
+- **展示要求 / Presentation brief**：明确鞋履特写、姿势、场景、袜子和下装，不把多个 SKU 或左右脚方向混进同一任务。 / Define the close-up, pose, scene, socks and trousers without mixing SKUs or left/right orientation.
+- **验收 / Review**：逐项核对鞋头、后跟、鞋底、鞋带孔或扣件、Logo、配色、遮挡、脚部与地面的接触和阴影。 / Review the toe box, heel, outsole, laces or fasteners, logo, colorway, occlusion, foot contact and shadow.
+- **模型分流 / Model routing**：不含人物的鞋履商品图可评估 [GPT Image 2](https://flux-art.cn/zh/models/gpt-image-2)；单一区域的有界修改可评估 [GPT Image 2.5](https://flux-art.cn/zh/models/gpt-image-2-5)；已验收系列图的一致性扩展可评估 [Nano Banana 2](https://flux-art.cn/zh/models/nano-banana-2)。 / Use each model for its stated image task, not as proof of physical fit.
+
+当参考图无法证明鞋底、后跟或扣件结构，或者左右方向和 SKU 版本冲突时，暂停上脚图并补拍。完整操作与停止线见[鞋履上脚工作流](https://github.com/flux-art-ai/flux-art-ecom-image-workflow/blob/main/docs/09-model-photo.md)。
+
 ### 看不见的商品细节不能靠生成补齐 / Do not generate missing product evidence
 
 如果参考图没有显示背面、接口、包装小字或装箱配件，先暂停会展示这些信息的任务。补拍应使用同一完整 SKU，并为每张照片记录正面、背面、侧面、底部、接口近照或包装文字等职责；不同颜色、容量或包装版本不要混在同一组参考图里。
