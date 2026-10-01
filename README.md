@@ -2,7 +2,7 @@
 
 **多模型 AI 视觉创作与生产平台 | Multi-model AI visual creation and production platform**
 
-[Flux Art 官网](https://flux-art.cn) · [Flux Art 官方博客](https://flux-art.cn/blog/zh/) · [Official Blog (EN)](https://flux-art.cn/blog/en/)
+[Flux Art 官网](https://flux-art.cn) · [Flux Art 官方博客](https://flux-art.net/blog/zh/) · [Official Blog (EN)](https://flux-art.net/blog/en/)
 
 Flux Art 聚合 50+ 图像/视频模型（[GPT Image 2.5](https://flux-art.cn/zh/models/gpt-image-2-5)、[GPT Image 2](https://flux-art.cn/zh/models/gpt-image-2)、[Nano Banana 2](https://flux-art.cn/zh/models/nano-banana-2)、[Seedance 2.0](https://flux-art.cn/zh/models/seedance-2-0)、[Seedream 5.0 Pro](https://flux-art.cn/zh/models/seedream-5-0-pro) 等），提供图片生成、图片编辑、视频创作与电商工具，并配套 150+ 垂类 Agent、20K+ 提示词库与异步任务式 OpenAPI。参考图数量、尺寸和其他选项依具体模型与工具而定。
 
@@ -21,6 +21,19 @@ Flux Art aggregates 50+ image & video models ([GPT Image 2.5](https://flux-art.c
 - 返修完成后：[人工修复件验收与继续编辑](https://github.com/flux-art-ai/gpt-image-2.5/blob/main/docs/repair-acceptance-and-batch-restart.md) → [SKU 批次恢复检查](https://github.com/flux-art-ai/flux-art-ecom-image-workflow/blob/main/docs/04-series-consistency.md) → [SKU 批量图](https://flux-art.cn/zh/ai-ecommerce/sku-batch)。先确认修复件，再修正批次输入；每个变体独立复核。Accept the repaired file, correct the batch inputs, then review every variant before delivery.
 
 For browser use, open the GPT Image 2.5 family workspace and choose Flare or Sunburst in the interface. For Flux Art OpenAPI integrations, the current Reference lists `gpt-image-2.5-flare` and `gpt-image-2.5-sunburst`; confirm availability and accepted fields with the authenticated `GET /models` response before creating a task. A queued response is not a completed image.
+
+## Nano Banana 四个版本怎么选？ / Which Nano Banana version should I use?
+
+Nano Banana 是模型家族名称，不代表四个版本拥有相同分辨率、参考图范围或任务定位。先按当前任务选择入口，再在提交前核对页面选项。Google 提供这些模型，Flux Art 提供多模型工作台与使用入口。
+
+| 当前任务 / Current task | 使用入口 / Flux Art entry | 交付前检查 / Before delivery |
+|---|---|---|
+| 单张已有图片的快速修改 / Fast edit of one existing image | [Nano Banana](https://flux-art.cn/zh/models/nano-banana) · [EN](https://flux-art.cn/en/models/nano-banana) | 当前为 1K，编辑最多三张参考图；仍要逐项检查未要求修改的区域 |
+| 先试构图、氛围或版式方向 / Early direction drafts | [Nano Banana 2 Lite](https://flux-art.cn/zh/models/nano-banana-2-lite) · [EN](https://flux-art.cn/en/models/nano-banana-2-lite) | 当前为 1K 草图；方向通过后再进入定稿与商品事实验收 |
+| 基于已验收图片扩展系列版本 / Controlled series variations | [Nano Banana 2](https://flux-art.cn/zh/models/nano-banana-2) · [EN](https://flux-art.cn/en/models/nano-banana-2) | 当前提供 512、1K、2K、4K；尺寸变大不等于商品标签、结构或材质自动正确 |
+| 需要较高分辨率的精细生成或编辑 / Detail-heavy generation or editing | [Nano Banana Pro](https://flux-art.cn/zh/models/nano-banana-pro) · [EN](https://flux-art.cn/en/models/nano-banana-pro) | 当前提供 1K、2K、4K；逐字核对文字、事实、Logo 与受保护区域 |
+
+同一真实商品做版本比较时，固定原图、任务、画幅和验收表，只改变一个模型选择。需要把通过样本扩展成系列资产时，继续使用 [Nano Banana 2 多图融合与系列款流程](https://github.com/flux-art-ai/flux-art-ecom-image-workflow/blob/main/docs/models/nano-banana-2.md)。 / Keep the source, task, framing and review checklist fixed when comparing versions; change only the selected model.
 
 ## AI 电商 / AI Ecommerce
 
