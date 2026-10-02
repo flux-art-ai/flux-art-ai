@@ -228,6 +228,17 @@ This is an operator checklist. Flux Art model pages do not automatically schedul
 
 当参考图无法证明鞋底、后跟或扣件结构，或者左右方向和 SKU 版本冲突时，暂停上脚图并补拍。完整操作与停止线见[鞋履上脚工作流](https://github.com/flux-art-ai/flux-art-ecom-image-workflow/blob/main/docs/09-model-photo.md)。
 
+### 配饰试戴怎样保持尺度和佩戴位置？ / How do I preserve accessory scale and placement?
+
+先把配饰当作需要独立验收的真实商品，再进入 [AI 万戴](https://flux-art.cn/zh/ai-ecommerce/accessory-try-on)。Start with verified product evidence, then use [AI Accessory Try-on](https://flux-art.cn/en/ai-ecommerce/accessory-try-on) to create an on-model candidate; the result is a styling visual, not proof of physical fit or comfort.
+
+- **选择任务 / Choose the task**：当前页面覆盖帽子、眼镜、围巾/披肩、项链、耳饰、手表、手链、腰带、手提包和单肩/斜挎包，可选择 AI 模特或已获授权的自定义模特。 / Choose the exact accessory type and an AI model or an authorized custom model.
+- **准备证据 / Prepare evidence**：保留配饰正面、侧面、扣件、链带、五金、Logo、图案和尺寸依据；包袋还要记录手提、单肩或斜挎方式。 / Record product orientation, hardware, straps, logos, pattern landmarks and verified dimensions before generation.
+- **检查锚点 / Review anchors**：眼镜检查鼻梁与镜腿，耳饰检查耳垂，项链检查颈部与吊坠，腕表检查表盘与腕部，包袋检查提手、肩带和身体遮挡。 / Review the actual contact path instead of judging only the overall look.
+- **停止条件 / Stop condition**：结构、比例和多个佩戴点同时变化时回到商品证据或重新生成；只有整体已通过且单一区域有依据时，才评估 [GPT Image 2.5](https://flux-art.cn/zh/models/gpt-image-2-5) 的限定编辑。 / Do not stack edits on a failed accessory candidate.
+
+输出比例、人物属性和补充说明应服务于明确版位，不应被解释为真实尺寸或适配结论。完整分类表、可用提示词和整图验收见[配饰试戴工作流](https://github.com/flux-art-ai/flux-art-ecom-image-workflow/blob/main/docs/09-model-photo.md)。
+
 ### 看不见的商品细节不能靠生成补齐 / Do not generate missing product evidence
 
 如果参考图没有显示背面、接口、包装小字或装箱配件，先暂停会展示这些信息的任务。补拍应使用同一完整 SKU，并为每张照片记录正面、背面、侧面、底部、接口近照或包装文字等职责；不同颜色、容量或包装版本不要混在同一组参考图里。
