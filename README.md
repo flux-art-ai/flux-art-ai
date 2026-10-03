@@ -48,6 +48,16 @@ Nano Banana 是模型家族名称，不代表四个版本拥有相同分辨率�
 
 已验收的流程不必只因新版上线而更换；先用同一份商品资料比较结果。模型页面负责创作，GitHub 页面提供操作资料，商品结构和包装文字仍需逐张核对。
 
+模特图任务要按现有素材分流，不能把“上身、换姿势、换脸”合成一个模糊需求：
+
+| 现有素材 / Starting material | 专用入口 / Dedicated entry | 通过条件 / Pass condition |
+|---|---|---|
+| 服装商品图，需要生成上身展示 / Garment image needs an on-model view | [模特穿戴](https://flux-art.cn/zh/ai-ecommerce/model-wearing) · [Model Wearing](https://flux-art.cn/en/ai-ecommerce/model-wearing) | 版型、颜色、材质、领口、袖口、下摆、图案和遮挡可对照实物 |
+| 已有模特图，只改变姿势 / Existing model image, pose only | [模特一键换姿势](https://flux-art.cn/zh/ai-ecommerce/model-pose-change) · [Model Pose Change](https://flux-art.cn/en/ai-ecommerce/model-pose-change) | 人物、服装和场景保持，人体结构与布料形变自然 |
+| 已有模特图和已授权面部参考 / Model image plus an authorized face reference | [AI 模特换脸](https://flux-art.cn/zh/ai-ecommerce/model-face-swap) · [Model Face Swap](https://flux-art.cn/en/ai-ecommerce/model-face-swap) | 授权有效，面部边界与光线自然，发型、姿势、造型和场景不被改写 |
+
+需要串联多步时，每一步都从上一张已通过的图片继续，并保存输入、用途、授权范围和退回原因。换脸图不得暗示真人代言；穿戴图不能证明真实尺码或合身程度。英文操作与停止条件见 [Flux Art model-image workflow](https://github.com/flux-art-ai/flux-art-ecom-image-workflow/blob/main/docs/en/09-model-photo.md)。
+
 [中文电商专区](https://flux-art.cn/zh/ai-ecommerce) · [English ecommerce workspace](https://flux-art.cn/en/ai-ecommerce)
 
 - 上架内容 / Listing assets：[商品套图](https://flux-art.cn/zh/ai-ecommerce/product-suite)、[A+ 详情页](https://flux-art.cn/zh/ai-ecommerce/a-plus-content)、[SKU 批量图](https://flux-art.cn/zh/ai-ecommerce/sku-batch)。
