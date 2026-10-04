@@ -165,7 +165,9 @@ This is an operator checklist. Flux Art model pages do not automatically schedul
 3. **一次只做一种语言 / Produce one locale at a time**：短标题或限定区域改字可进入 [GPT Image 2.5](https://flux-art.cn/zh/models/gpt-image-2-5)；长文案使用排版工具。 / Use GPT Image 2.5 for short copy or bounded edits; place dense copy in a layout tool.
 4. **分别验收 / Review separately**：由理解目标语言的人逐字复核，再检查移动端裁切、渠道规格和实际前台。 / Have a qualified reviewer proofread each locale, then inspect crop, channel requirements and the live placement.
 
-完整表格见[图片翻译与多语言套图](https://github.com/flux-art-ai/flux-art-ecom-image-workflow/blob/main/docs/08-image-translation.md)。The workflow preserves traceability; it does not replace linguistic, legal or marketplace review.
+制作路径要按文案与版式选择，而不是按语言数量选择：短标题或单个文字框可做限定区域编辑；规格表、长段正文、法定文字或必须精确对齐的内容应使用排版工具；仅渠道裁切变化时则保留已批准语言图，只重做衍生文件。 / Choose the production path by copy and layout: use a bounded edit for a short headline or one text box, a layout tool for tables, dense copy, required wording or exact typography, and a derivative-only export when only the channel crop changes.
+
+完整表格见[图片翻译与多语言套图](https://github.com/flux-art-ai/flux-art-ecom-image-workflow/blob/main/docs/08-image-translation.md)；英文团队可直接使用 [AI product image localization workflow](https://github.com/flux-art-ai/flux-art-ecom-image-workflow/blob/main/docs/en/08-image-localization.md)。The workflow preserves traceability; it does not replace linguistic, legal or marketplace review.
 
 ### 批准文案改了，已上线的多语言图片怎么办？ / Approved copy changed: what is still live?
 
