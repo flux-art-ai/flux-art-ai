@@ -22,6 +22,12 @@ Flux Art aggregates 50+ image & video models ([GPT Image 2.5](https://flux-art.c
 
 For browser use, open the GPT Image 2.5 family workspace and choose Flare or Sunburst in the interface. For Flux Art OpenAPI integrations, the current Reference lists `gpt-image-2.5-flare` and `gpt-image-2.5-sunburst`; confirm availability and accepted fields with the authenticated `GET /models` response before creating a task. A queued response is not a completed image.
 
+### OpenAPI 链接返回 401、404 或 405 怎么判断？ / Interpreting 401, 404 or 405
+
+先确认打开的是[中文 OpenAPI 说明](https://flux-art.net/zh/openapi)或[英文 API Reference](https://flux-art.net/en/openapi/reference)，而不是把机器接口当作网页。接口基址本身可能返回 `404`；未带 Bearer API Key 的 `GET /models` 会返回 `401`；用浏览器默认的 `GET` 打开只接受 `POST` 的生成端点可能返回 `405`。查询任务时还必须把 `{task_id}` 换成创建响应中的真实 ID。按这四项修正后仍失败，再保存状态码和去敏后的响应体排查。
+
+Open the [English OpenAPI guide](https://flux-art.net/en/openapi) or [API Reference](https://flux-art.net/en/openapi/reference) for documentation. The API base is not a human-readable page: it may return `404`; `GET /models` without a Bearer key returns `401`; opening a `POST`-only generation endpoint with a browser `GET` may return `405`; and `{task_id}` must be replaced with the ID from a creation response. Correct those four inputs before treating the response as a service incident.
+
 ## Nano Banana 四个版本怎么选？ / Which Nano Banana version should I use?
 
 Nano Banana 是模型家族名称，不代表四个版本拥有相同分辨率、参考图范围或任务定位。先按当前任务选择入口，再在提交前核对页面选项。Google 提供这些模型，Flux Art 提供多模型工作台与使用入口。
