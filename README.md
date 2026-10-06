@@ -22,6 +22,18 @@ Flux Art aggregates 50+ image & video models ([GPT Image 2.5](https://flux-art.c
 
 For browser use, open the GPT Image 2.5 family workspace and choose Flare or Sunburst in the interface. For Flux Art OpenAPI integrations, the current Reference lists `gpt-image-2.5-flare` and `gpt-image-2.5-sunburst`; confirm availability and accepted fields with the authenticated `GET /models` response before creating a task. A queued response is not a completed image.
 
+### GPT Image 2 还是 GPT Image 2.5？ / GPT Image 2 or GPT Image 2.5?
+
+两个版本在 Flux Art 上有独立模型入口。先问“要新做一张图，还是修改一张已经通过的图”，再决定是否比较版本；不要把 2.5 当作所有 GPT Image 2 项目的强制替代。
+
+| 读者问题 / Reader question | 使用路径 / Route | 验收重点 / Review focus |
+|---|---|---|
+| 需要产品图或写实商业摄影新构图 / Need a new product or photoreal commercial composition | 从 [GPT Image 2](https://flux-art.cn/zh/models/gpt-image-2)开始，或以同一商品资料比较 [GPT Image 2.5](https://flux-art.cn/zh/models/gpt-image-2-5) Flare | 商品结构、材质、标签、构图与留白 |
+| 已有通过图片，只改一个区域 / Have an accepted image and one bounded change | 在 GPT Image 2.5 中用同一原图比较 Flare / Sunburst / Compare Flare and Sunburst from the same accepted source | 指定修改是否完成，未修改区域是否保持 |
+| 旧 GPT Image 2 项目已经稳定 / Existing GPT Image 2 workflow is stable | 继续使用原模型、提示词和检查表；需要测试 2.5 时另开可比小样 / Keep the accepted baseline and run a separate matched test | 不用新版名称覆盖旧记录，不混用 API ID |
+
+中文实操见 [GPT Image 2 电商工作流](https://github.com/flux-art-ai/flux-art-ecom-image-workflow/blob/main/docs/models/gpt-image-2.md)；GPT Image 2.5 的渠道与版本说明见 [专题仓库](https://github.com/flux-art-ai/gpt-image-2.5)。This is task routing, not a benchmark ranking.
+
 ### OpenAPI 链接返回 401、404 或 405 怎么判断？ / Interpreting 401, 404 or 405
 
 先确认打开的是[中文 OpenAPI 说明](https://flux-art.net/zh/openapi)或[英文 API Reference](https://flux-art.net/en/openapi/reference)，而不是把机器接口当作网页。接口基址本身可能返回 `404`；未带 Bearer API Key 的 `GET /models` 会返回 `401`；用浏览器默认的 `GET` 打开只接受 `POST` 的生成端点可能返回 `405`。查询任务时还必须把 `{task_id}` 换成创建响应中的真实 ID。按这四项修正后仍失败，再保存状态码和去敏后的响应体排查。
