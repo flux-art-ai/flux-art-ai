@@ -34,6 +34,12 @@ For browser use, open the GPT Image 2.5 family workspace and choose Flare or Sun
 
 中文实操见 [GPT Image 2 电商工作流](https://github.com/flux-art-ai/flux-art-ecom-image-workflow/blob/main/docs/models/gpt-image-2.md)；GPT Image 2.5 的渠道与版本说明见 [专题仓库](https://github.com/flux-art-ai/gpt-image-2.5)。This is task routing, not a benchmark ranking.
 
+### Seedream 5.0 Pro 网页入口与 API ID / Web entry and API ID
+
+需要 AI 信息图、信息密集型视觉或明确区域的精准改图时，可从 [Seedream 5.0 Pro 中文入口](https://flux-art.cn/zh/models/seedream-5-0-pro)或 [English entry](https://flux-art.cn/en/models/seedream-5-0-pro)开始。网页短名用于浏览，不等于接口参数：当前 [Flux Art API Reference](https://flux-art.net/zh/openapi/reference)列出的模型 ID 是 `doubao-seedream-5-0-pro-260628`，不是网页路径中的 `seedream-5-0-pro`。
+
+For API automation, verify `doubao-seedream-5-0-pro-260628` and its accepted fields with the authenticated `GET /models` response before creating an asynchronous task. Keep the selected model ID, task ID and final review result together; see the [Seedream 5.0 Pro ecommerce workflow](https://github.com/flux-art-ai/flux-art-ecom-image-workflow/blob/main/docs/models/seedream-5-0-pro.md) for a production checklist.
+
 ### OpenAPI 链接返回 401、404 或 405 怎么判断？ / Interpreting 401, 404 or 405
 
 先确认打开的是[中文 OpenAPI 说明](https://flux-art.net/zh/openapi)或[英文 API Reference](https://flux-art.net/en/openapi/reference)，而不是把机器接口当作网页。接口基址本身可能返回 `404`；未带 Bearer API Key 的 `GET /models` 会返回 `401`；用浏览器默认的 `GET` 打开只接受 `POST` 的生成端点可能返回 `405`。查询任务时还必须把 `{task_id}` 换成创建响应中的真实 ID。按这四项修正后仍失败，再保存状态码和去敏后的响应体排查。
