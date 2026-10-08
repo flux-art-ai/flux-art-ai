@@ -40,6 +40,12 @@ For browser use, open the GPT Image 2.5 family workspace and choose Flare or Sun
 
 For API automation, verify `doubao-seedream-5-0-pro-260628` and its accepted fields with the authenticated `GET /models` response before creating an asynchronous task. Keep the selected model ID, task ID and final review result together; see the [Seedream 5.0 Pro ecommerce workflow](https://github.com/flux-art-ai/flux-art-ecom-image-workflow/blob/main/docs/models/seedream-5-0-pro.md) for a production checklist.
 
+### Seedance 2.0 网页入口与 API ID / Web entry and API ID
+
+制作产品视频或广告短片时，从 [Seedance 2.0 中文入口](https://flux-art.cn/zh/models/seedance-2-0)或 [English entry](https://flux-art.cn/en/models/seedance-2-0)进入浏览器工作台。网页路径使用 `seedance-2-0`，当前 [Flux Art API Reference](https://flux-art.net/zh/openapi/reference)列出的 OpenAPI 模型 ID 则是 `doubao-seedance-2-0-260128`；两者不能互换。
+
+For API automation, confirm `doubao-seedance-2-0-260128` and its accepted fields with the authenticated `GET /models` response before creating a video task. A created or queued task is not a finished clip: save the idempotency key, task ID, final status and delivery review. The [Seedance 2.0 ecommerce video workflow](https://github.com/flux-art-ai/flux-art-ecom-image-workflow/blob/main/docs/models/seedance-2-0.md) covers the shot brief and product checks.
+
 ### OpenAPI 链接返回 401、404 或 405 怎么判断？ / Interpreting 401, 404 or 405
 
 先确认打开的是[中文 OpenAPI 说明](https://flux-art.net/zh/openapi)或[英文 API Reference](https://flux-art.net/en/openapi/reference)，而不是把机器接口当作网页。接口基址本身可能返回 `404`；未带 Bearer API Key 的 `GET /models` 会返回 `401`；用浏览器默认的 `GET` 打开只接受 `POST` 的生成端点可能返回 `405`。查询任务时还必须把 `{task_id}` 换成创建响应中的真实 ID。按这四项修正后仍失败，再保存状态码和去敏后的响应体排查。
