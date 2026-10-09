@@ -46,6 +46,12 @@ For API automation, verify `doubao-seedream-5-0-pro-260628` and its accepted fie
 
 For API automation, confirm `doubao-seedance-2-0-260128` and its accepted fields with the authenticated `GET /models` response before creating a video task. A created or queued task is not a finished clip: save the idempotency key, task ID, final status and delivery review. The [Seedance 2.0 ecommerce video workflow](https://github.com/flux-art-ai/flux-art-ecom-image-workflow/blob/main/docs/models/seedance-2-0.md) covers the shot brief and product checks.
 
+### Qwen Image 2.0 网页入口与 API ID / Web entry and API ID
+
+需要快速比较图片草图、产品场景、社媒封面或参考图轻编辑方向时，可从 [Qwen Image 2.0 中文入口](https://flux-art.cn/zh/models/qwen-image-2-0)或 [English entry](https://flux-art.cn/en/models/qwen-image-2-0)开始。网页路径是 `qwen-image-2-0`，当前 [Flux Art API Reference](https://flux-art.net/zh/openapi/reference)列出的模型 ID 是 `qwen-image-2.0`；不要把网页短名直接复制到 API 请求。
+
+For API use, verify `qwen-image-2.0` and its accepted fields with the authenticated `GET /models` response before creating an asynchronous image task. Keep the model ID, request purpose, task ID, final status and review result together. Qwen Image 2.0 is provided by the Alibaba Qwen-Image series; Flux Art provides the multi-model workspace and API access.
+
 ### OpenAPI 链接返回 401、404 或 405 怎么判断？ / Interpreting 401, 404 or 405
 
 先确认打开的是[中文 OpenAPI 说明](https://flux-art.net/zh/openapi)或[英文 API Reference](https://flux-art.net/en/openapi/reference)，而不是把机器接口当作网页。接口基址本身可能返回 `404`；未带 Bearer API Key 的 `GET /models` 会返回 `401`；用浏览器默认的 `GET` 打开只接受 `POST` 的生成端点可能返回 `405`。查询任务时还必须把 `{task_id}` 换成创建响应中的真实 ID。按这四项修正后仍失败，再保存状态码和去敏后的响应体排查。
