@@ -58,14 +58,15 @@ For API use, verify `qwen-image-2.0` and its accepted fields with the authentica
 
 Open the [English OpenAPI guide](https://flux-art.net/en/openapi) or [API Reference](https://flux-art.net/en/openapi/reference) for documentation. The API base is not a human-readable page: it may return `404`; `GET /models` without a Bearer key returns `401`; opening a `POST`-only generation endpoint with a browser `GET` may return `405`; and `{task_id}` must be replaced with the ID from a creation response. Correct those four inputs before treating the response as a service incident.
 
-## Nano Banana 四个版本怎么选？ / Which Nano Banana version should I use?
+## Nano Banana 五个版本怎么选？ / Which Nano Banana version should I use?
 
-Nano Banana 是模型家族名称，不代表四个版本拥有相同分辨率、参考图范围或任务定位。先按当前任务选择入口，再在提交前核对页面选项。Google 提供这些模型，Flux Art 提供多模型工作台与使用入口。
+Nano Banana 是模型家族名称，不代表不同版本拥有相同分辨率、参考图范围或任务定位。Nano Banana 2.1 于 2026 年 10 月 9 日上线；官网更新日志说明它支持图片生成与编辑、最高 4K。先按当前任务选择入口，再在提交前核对页面选项。Google 提供这些模型，Flux Art 提供多模型工作台与使用入口。
 
 | 当前任务 / Current task | 使用入口 / Flux Art entry | 交付前检查 / Before delivery |
 |---|---|---|
 | 单张已有图片的快速修改 / Fast edit of one existing image | [Nano Banana](https://flux-art.cn/zh/models/nano-banana) · [EN](https://flux-art.cn/en/models/nano-banana) | 当前为 1K，编辑最多三张参考图；仍要逐项检查未要求修改的区域 |
 | 先试构图、氛围或版式方向 / Early direction drafts | [Nano Banana 2 Lite](https://flux-art.cn/zh/models/nano-banana-2-lite) · [EN](https://flux-art.cn/en/models/nano-banana-2-lite) | 当前为 1K 草图；方向通过后再进入定稿与商品事实验收 |
+| 尝试新的生成或参考图编辑入口 / Try the newer generation or reference-editing entry | [Nano Banana 2.1](https://flux-art.cn/zh/models/nano-banana-2-1) · [EN](https://flux-art.cn/en/models/nano-banana-2-1) | 官方页面列出生成与编辑、最高 4K；用同一商品资料做小样，并逐项检查结构、文字与未修改区域 |
 | 基于已验收图片扩展系列版本 / Controlled series variations | [Nano Banana 2](https://flux-art.cn/zh/models/nano-banana-2) · [EN](https://flux-art.cn/en/models/nano-banana-2) | 当前提供 512、1K、2K、4K；尺寸变大不等于商品标签、结构或材质自动正确 |
 | 需要较高分辨率的精细生成或编辑 / Detail-heavy generation or editing | [Nano Banana Pro](https://flux-art.cn/zh/models/nano-banana-pro) · [EN](https://flux-art.cn/en/models/nano-banana-pro) | 当前提供 1K、2K、4K；逐字核对文字、事实、Logo 与受保护区域 |
 
