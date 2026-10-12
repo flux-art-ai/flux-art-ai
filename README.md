@@ -83,9 +83,12 @@ Nano Banana 是模型家族名称，不代表不同版本拥有相同分辨率�
 | 新商品图与带字视觉 / Product images and text | [GPT Image 2](https://flux-art.cn/zh/models/gpt-image-2)，根据真实商品资料生成或编辑 | [商品图制作与验收](https://github.com/flux-art-ai/flux-art-ecom-image-workflow/blob/main/docs/models/gpt-image-2.md) |
 | 同一商品换场景 / Product scene variations | [Nano Banana 2](https://flux-art.cn/zh/models/nano-banana-2)，明确每张参考图的用途 | [多图融合与系列款](https://github.com/flux-art-ai/flux-art-ecom-image-workflow/blob/main/docs/models/nano-banana-2.md) |
 | 继续修改已有图片 / Revise an existing image | [GPT Image 2.5](https://flux-art.cn/zh/models/gpt-image-2-5)，在编辑模式比较 Flare / Sunburst | [修改边界与返修检查](https://github.com/flux-art-ai/gpt-image-2.5/blob/main/docs/reference-editing.md) |
+| 复用获准参考图的构图 / Recreate a licensed reference composition | [爆款图片复刻](https://flux-art.cn/zh/ai-ecommerce/reference-clone)；分别上传自己的商品图与参考图 | 商品事实来自自己的商品资料；参考图只提供获准借鉴的视觉方向 |
 | 一套上架图或多个 SKU / Listing sets or SKU variants | [AI 电商专区](https://flux-art.cn/zh/ai-ecommerce)，按交付物选专用工具 | [工具区别与输入准备](https://github.com/flux-art-ai/flux-art-ecom-image-workflow/blob/main/docs/10-ecommerce-tools.md) |
 
 已验收的流程不必只因新版上线而更换；先用同一份商品资料比较结果。模型页面负责创作，GitHub 页面提供操作资料，商品结构和包装文字仍需逐张核对。
+
+参考图复刻与参考图编辑不是同一入口：前者在[爆款图片复刻](https://flux-art.cn/zh/ai-ecommerce/reference-clone)中用商品图和参考图分别定义商品事实与视觉方向；后者从 [GPT Image 2.5](https://flux-art.cn/zh/models/gpt-image-2-5)的已验收原图开始，限定要改的内容。英文用户可直接查看 [Reference Clone](https://flux-art.cn/en/ai-ecommerce/reference-clone)。选择前先确认参考素材的授权范围，并从成片检查商品标签、颜色和未要求修改的区域。
 
 模特图任务要按现有素材分流，不能把“上身、换姿势、换脸”合成一个模糊需求：
 
