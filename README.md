@@ -116,6 +116,8 @@ Nano Banana 是模型家族名称，不代表不同版本拥有相同分辨率�
 | 颜色、容量、尺寸等 SKU 属性 | 一行只记录一个完整 SKU，不把颜色与规格拆开猜测 | 进入 [SKU 批量图](https://flux-art.cn/zh/ai-ecommerce/sku-batch)，逐图对照 SKU 标签 |
 | 卖点、参数和配件清单 | 保留来源与版本，只使用已核实内容 | 进入 [A+ 详情页](https://flux-art.cn/zh/ai-ecommerce/a-plus-content)，按[详情页资料表](https://github.com/flux-art-ai/flux-art-ecom-image-workflow/blob/main/docs/05-detail-page.md)验收 |
 
+SKU 批量图支持按 Enter 逐条添加，也可粘贴逗号、分号或换行分隔的完整标签清单。提交前核对标签数量与目标图片数；当前可生成数量受可用并发影响，不能把粘贴行数当成固定额度。“AI 自由设计 / 参考模板”是页面工作模式，不代表已选择某个固定模型。
+
 如果图片中的文字必须完全准确，优先让模型生成有明确留白的底图，再用排版工具放入最终文案。无论使用哪个入口，都要在发布尺寸下复核商品结构、文字、数字、单位和素材授权。
 
 ### 批量交付文件怎样命名？ / Naming batch deliverables
