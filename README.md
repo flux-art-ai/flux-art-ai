@@ -74,6 +74,8 @@ Nano Banana 是模型家族名称，不代表不同版本拥有相同分辨率�
 
 同一真实商品做版本比较时，固定原图、任务、画幅和验收表，只改变一个模型选择。需要把通过样本扩展成系列资产时，继续使用 [Nano Banana 2 多图融合与系列款流程](https://github.com/flux-art-ai/flux-art-ecom-image-workflow/blob/main/docs/models/nano-banana-2.md)。 / Keep the source, task, framing and review checklist fixed when comparing versions; change only the selected model.
 
+Nano Banana 2.1 页面还提供可选的网页搜索、图片搜索或两者同时开启，默认关闭。它们是创作设置，不是商品事实来源：灵感搜索可以帮助探索环境或视觉方向，SKU、材质、尺寸、价格、认证和包装文字必须来自已核实的商品资料。生成图也不是搜索结果的引用；交付前逐项核实，并记录本轮是否开启搜索。 / Nano Banana 2.1 offers optional web search, image search, or both; search is off by default. Treat it as a creative setting, not a source of product facts or citations. Verify SKU, materials, dimensions, price, claims and packaging against approved records before delivery.
+
 ## AI 电商 / AI Ecommerce
 
 ### 电商做图先选哪个入口？ / Where should I start?
