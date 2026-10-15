@@ -80,6 +80,8 @@ Nano Banana 2.1 页面还提供可选的网页搜索、图片搜索或两者同�
 
 ### 电商做图先选哪个入口？ / Where should I start?
 
+已上传的商品图和生成候选可在 [Flux Art 资产库](https://flux-art.cn/zh/assets)集中查看与复用。开始新一轮任务前，先确认素材对应的 SKU、用途、授权和验收状态；需要多人审批、自动版本追踪或素材与 SKU 自动关联时，应在自己的业务流程中另行管理，不能从资产库入口推断这些能力。
+
 | 你要完成的任务 / Task | 在 Flux Art 上怎么做 / Start here | 操作资料 / Guide |
 |---|---|---|
 | 新商品图与带字视觉 / Product images and text | [GPT Image 2](https://flux-art.cn/zh/models/gpt-image-2)，根据真实商品资料生成或编辑 | [商品图制作与验收](https://github.com/flux-art-ai/flux-art-ecom-image-workflow/blob/main/docs/models/gpt-image-2.md) |
