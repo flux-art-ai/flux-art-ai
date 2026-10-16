@@ -76,6 +76,10 @@ Nano Banana 是模型家族名称，不代表不同版本拥有相同分辨率�
 
 Nano Banana 2.1 页面还提供可选的网页搜索、图片搜索或两者同时开启，默认关闭。它们是创作设置，不是商品事实来源：灵感搜索可以帮助探索环境或视觉方向，SKU、材质、尺寸、价格、认证和包装文字必须来自已核实的商品资料。生成图也不是搜索结果的引用；交付前逐项核实，并记录本轮是否开启搜索。 / Nano Banana 2.1 offers optional web search, image search, or both; search is off by default. Treat it as a creative setting, not a source of product facts or citations. Verify SKU, materials, dimensions, price, claims and packaging against approved records before delivery.
 
+### Nano Banana 2.1 能直接上传 PDF 或视频吗？ / Can Nano Banana 2.1 take PDFs or videos directly?
+
+Flux Art 当前 [Nano Banana 2.1 工作台](https://flux-art.cn/zh/models/nano-banana-2-1)的输入表单不接收 PDF 或视频文件。若任务需要从手册或视频中参考画面，先从有权使用的材料中导出相关页面图或静帧，再作为图片参考提交；记录来源页码或时间码，并用商品主数据核验 SKU、规格和包装文字。此限制描述的是 Flux Art 当前表单，不代表对模型提供方其他产品或接口的判断。/ The current Flux Art form does not accept PDF or video files. Export relevant pages or still frames from materials you are authorized to use, then submit them as image references. Keep page/timecode provenance and verify product facts against approved records. This describes the current Flux Art form, not every product or API from the model provider.
+
 ## AI 电商 / AI Ecommerce
 
 ### 电商做图先选哪个入口？ / Where should I start?
