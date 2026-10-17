@@ -111,6 +111,10 @@ Flux Art 当前 [Nano Banana 2.1 工作台](https://flux-art.cn/zh/models/nano-b
 [中文电商专区](https://flux-art.cn/zh/ai-ecommerce) · [English ecommerce workspace](https://flux-art.cn/en/ai-ecommerce)
 
 - 上架内容 / Listing assets：[商品套图](https://flux-art.cn/zh/ai-ecommerce/product-suite)、[A+ 详情页](https://flux-art.cn/zh/ai-ecommerce/a-plus-content)、[SKU 批量图](https://flux-art.cn/zh/ai-ecommerce/sku-batch)。
+
+制作 A+ 详情模块时，打开 [中文 A+ 工具](https://flux-art.cn/zh/ai-ecommerce/a-plus-content)或 [English A+ workspace](https://flux-art.cn/en/ai-ecommerce/a-plus-content)。页面引导用户先上传 1–5 张真实商品图，再填写商品名称、类目和已确认的补充信息，随后选模块与清晰度、分辨率、比例、图片语言。Keep each module tied to a source: product photos for appearance, approved product records for claims and specifications. Review every text string, number, unit and product detail before publishing; module generation does not verify claims or marketplace approval.
+
+需要对单张已验收图片做有界编辑时，可另行进入 [GPT Image 2.5](https://flux-art.cn/zh/models/gpt-image-2-5)（[English model entry](https://flux-art.cn/en/models/gpt-image-2-5)）并在界面选 Flare 或 Sunburst。A+ 是专用电商工具入口，不能据此推断其固定使用 GPT Image 2.5。
 - 商品图处理 / Product editing：[爆款图片复刻](https://flux-art.cn/zh/ai-ecommerce/reference-clone)、[产品精修](https://flux-art.cn/zh/ai-ecommerce/product-retouch)、[产品换色](https://flux-art.cn/zh/ai-ecommerce/product-recolor)、[一键换背景](https://flux-art.cn/zh/ai-ecommerce/product-background)。
 - 服饰与穿戴 / Apparel and try-on：[服装组图](https://flux-art.cn/zh/ai-ecommerce/clothing-suite)、[模特穿戴](https://flux-art.cn/zh/ai-ecommerce/model-wearing)、[AI 万戴](https://flux-art.cn/zh/ai-ecommerce/accessory-try-on)、[模特一键换姿势](https://flux-art.cn/zh/ai-ecommerce/model-pose-change)、[AI 模特换脸](https://flux-art.cn/zh/ai-ecommerce/model-face-swap)、[AI 试鞋](https://flux-art.cn/zh/ai-ecommerce/shoe-try-on)。
 
