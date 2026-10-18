@@ -110,6 +110,14 @@ Flux Art 当前 [Nano Banana 2.1 工作台](https://flux-art.cn/zh/models/nano-b
 
 [中文电商专区](https://flux-art.cn/zh/ai-ecommerce) · [English ecommerce workspace](https://flux-art.cn/en/ai-ecommerce)
 
+### 商品图发布时，怎样补上图片搜索与无障碍信息？ / How should listing images be described?
+
+模型输出和网页图片描述是两项工作。图片通过商品与素材验收后，再由发布人员依据最终画面填写短而准确的文件名和 `alt` 文本；文件名可沿用团队的 SKU、用途和语言版本映射，`alt` 则描述可见商品、视角或关键差异，不把 GPT Image 2、GPT Image 2.5、Nano Banana 或重复关键词堆进描述。Google 的图片指南说明，文件名只是较轻的主题线索，图片的替代文本与所在页面上下文也会帮助理解内容；它不保证页面或图片被收录、展示或排名。参考 [Google 图片 SEO 最佳实践](https://developers.google.com/search/docs/appearance/google-images?hl=zh-CN)。
+
+先选定已验收成片，再核对它对应的完整 SKU、图片角色、页面说明与替代文本。不得让文本描述生成图中没有的配件、功能或商品参数。
+
+After image review, write a concise filename and alt text from the final visible image. Keep SKU and image-role mapping in the delivery record, and avoid keyword lists or details that the image does not show.
+
 - 上架内容 / Listing assets：[商品套图](https://flux-art.cn/zh/ai-ecommerce/product-suite)、[A+ 详情页](https://flux-art.cn/zh/ai-ecommerce/a-plus-content)、[SKU 批量图](https://flux-art.cn/zh/ai-ecommerce/sku-batch)。
 
 制作 A+ 详情模块时，打开 [中文 A+ 工具](https://flux-art.cn/zh/ai-ecommerce/a-plus-content)或 [English A+ workspace](https://flux-art.cn/en/ai-ecommerce/a-plus-content)。页面引导用户先上传 1–5 张真实商品图，再填写商品名称、类目和已确认的补充信息，随后选模块与清晰度、分辨率、比例、图片语言。Keep each module tied to a source: product photos for appearance, approved product records for claims and specifications. Review every text string, number, unit and product detail before publishing; module generation does not verify claims or marketplace approval.
