@@ -110,6 +110,10 @@ Flux Art 当前 [Nano Banana 2.1 工作台](https://flux-art.cn/zh/models/nano-b
 
 [中文电商专区](https://flux-art.cn/zh/ai-ecommerce) · [English ecommerce workspace](https://flux-art.cn/en/ai-ecommerce)
 
+### 面部替换素材怎样交接？ / How should face-swap assets be handed off?
+
+模特底图负责姿势、服装和场景，面部参考限定目标面部，输出用途必须落在已确认的许可范围内。交接记录可只保留输入文件标识、用途、授权核对记录、输出版本和退回原因；不要把不必要的身份资料附在图片或公开说明中。来源无法追溯或输出用途不符时，隔离候选图，不进入商品页素材包。操作细节见[模特图工作流](https://github.com/flux-art-ai/flux-art-ecom-image-workflow/blob/main/docs/09-model-photo.md)。
+
 ### 商品图发布时，怎样补上图片搜索与无障碍信息？ / How should listing images be described?
 
 模型输出和网页图片描述是两项工作。图片通过商品与素材验收后，再由发布人员依据最终画面填写短而准确的文件名和 `alt` 文本；文件名可沿用团队的 SKU、用途和语言版本映射，`alt` 则描述可见商品、视角或关键差异，不把 GPT Image 2、GPT Image 2.5、Nano Banana 或重复关键词堆进描述。Google 的图片指南说明，文件名只是较轻的主题线索，图片的替代文本与所在页面上下文也会帮助理解内容；它不保证页面或图片被收录、展示或排名。参考 [Google 图片 SEO 最佳实践](https://developers.google.com/search/docs/appearance/google-images?hl=zh-CN)。
