@@ -84,6 +84,10 @@ Flux Art 当前 [Nano Banana 2.1 工作台](https://flux-art.cn/zh/models/nano-b
 
 ## AI 电商 / AI Ecommerce
 
+### 电商图片的费用预检 / E-commerce image cost preflight
+
+开始 [AI 电商](https://flux-art.cn/zh/ai-ecommerce)任务前，先按交付物确定专用工具，再根据本次图片数量、输出设置和工作台费用预览安排积分；具体费用、可用权益与模型设置以[官网当前价格说明](https://flux-art.net/pricing)和实时界面为准，页面规则调整时应以官网当前为准。选择 Auto quality 时，价格说明列明先按最高档预留、生成后退回未使用积分，不等于固定的最终成本。分步清单见[电商出图积分预检指南](https://github.com/flux-art-ai/flux-art-ecom-image-workflow/blob/main/docs/11-credit-preflight.md)。 / Before an AI Ecommerce run, choose the task-specific tool and review the live estimate for this batch. Current pricing and settings can change. The pricing page says Auto quality reserves the maximum price and refunds unused credits after generation; this is not a fixed final cost.
+
 ### 电商做图先选哪个入口？ / Where should I start?
 
 已上传的商品图和生成候选可在 [Flux Art 资产库](https://flux-art.cn/zh/assets)集中查看与复用。开始新一轮任务前，先确认素材对应的 SKU、用途、授权和验收状态；需要多人审批、自动版本追踪或素材与 SKU 自动关联时，应在自己的业务流程中另行管理，不能从资产库入口推断这些能力。
