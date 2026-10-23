@@ -67,6 +67,8 @@ Nano Banana 是模型家族名称，不代表不同版本拥有相同分辨率�
 | 单张已有图片的快速修改 / Fast edit of one existing image | [Nano Banana](https://flux-art.cn/zh/models/nano-banana) · [EN](https://flux-art.cn/en/models/nano-banana) | 当前为 1K，编辑最多三张参考图；仍要逐项检查未要求修改的区域 |
 | 先试构图、氛围或版式方向 / Early direction drafts | [Nano Banana 2 Lite](https://flux-art.cn/zh/models/nano-banana-2-lite) · [EN](https://flux-art.cn/en/models/nano-banana-2-lite) | 当前为 1K 草图；方向通过后再进入定稿与商品事实验收 |
 | 尝试新的生成或参考图编辑入口 / Try the newer generation or reference-editing entry | [Nano Banana 2.1](https://flux-art.cn/zh/models/nano-banana-2-1) · [EN](https://flux-art.cn/en/models/nano-banana-2-1) | 官方页面列出生成与编辑、最高 4K；用同一商品资料做小样，并逐项检查结构、文字与未修改区域 |
+
+制作超宽幅商品横幅时，可以在 Nano Banana 2.1 页面选择 1:4、4:1、1:8 或 8:1 画幅。Google 的模型文档提到 2K/4K 超宽比例的拼接伪影改进；发布前仍要放大检查长边接缝、商品轮廓和裁切安全区，不能把模型更新说明当成单张成片验收结果。/ For panoramic product banners, the Nano Banana 2.1 page offers 1:4, 4:1, 1:8 and 8:1 ratios. Google documents a tiling-artifact improvement at 2K/4K ultra-wide ratios; inspect long-edge seams, product contours and crop-safe areas before delivery.
 | 基于已验收图片扩展系列版本 / Controlled series variations | [Nano Banana 2](https://flux-art.cn/zh/models/nano-banana-2) · [EN](https://flux-art.cn/en/models/nano-banana-2) | 当前提供 512、1K、2K、4K；尺寸变大不等于商品标签、结构或材质自动正确 |
 | 需要较高分辨率的精细生成或编辑 / Detail-heavy generation or editing | [Nano Banana Pro](https://flux-art.cn/zh/models/nano-banana-pro) · [EN](https://flux-art.cn/en/models/nano-banana-pro) | 当前提供 1K、2K、4K；逐字核对文字、事实、Logo 与受保护区域 |
 
