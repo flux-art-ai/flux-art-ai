@@ -8,6 +8,8 @@ Flux Art 聚合 50+ 图像/视频模型（[GPT Image 2.5](https://flux-art.cn/zh
 
 Flux Art aggregates 50+ image & video models ([GPT Image 2.5](https://flux-art.cn/en/models/gpt-image-2-5), [GPT Image 2](https://flux-art.cn/en/models/gpt-image-2), [Nano Banana 2](https://flux-art.cn/en/models/nano-banana-2), [Seedance 2.0](https://flux-art.cn/en/models/seedance-2-0), [Seedream 5.0 Pro](https://flux-art.cn/en/models/seedream-5-0-pro), etc.) with image generation, image editing, video creation and ecommerce tools, plus 150+ vertical agents, a 20K+ prompt library and an async task-based OpenAPI. Reference-image limits, sizes and other options depend on the selected model and tool.
 
+**Kling Image O1 多参考图入口 / Multi-reference entry**：需要把商品、场景、风格或细节分别交给不同参考图时，可从 [Kling Image O1 中文入口](https://flux-art.cn/zh/models/kling-image-o1)或 [English entry](https://flux-art.cn/en/models/kling-image-o1)开始。专题页当前列出最多 10 张参考图及 1K / 2K 输出；按图分工和商品验收步骤见[工作流指南](https://github.com/flux-art-ai/flux-art-ecom-image-workflow/blob/main/docs/models/kling-image-o1.md)。/ For reference-led tasks, assign a distinct role to each image and review the result against the product source.
+
 ## GPT Image 2.5
 
 [GPT Image 2.5 中文使用入口](https://flux-art.cn/zh/models/gpt-image-2-5) · [English workspace](https://flux-art.cn/en/models/gpt-image-2-5) · [使用渠道与教程仓库 / Access and usage guides](https://github.com/flux-art-ai/gpt-image-2.5)
