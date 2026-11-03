@@ -12,6 +12,12 @@ Flux Art aggregates 50+ image & video models ([GPT Image 2.5](https://flux-art.c
 
 **Kling Image O1 多参考图入口 / Multi-reference entry**：需要把商品、场景、风格或细节分别交给不同参考图时，可从 [Kling Image O1 中文入口](https://flux-art.cn/zh/models/kling-image-o1)或 [English entry](https://flux-art.cn/en/models/kling-image-o1)开始。专题页当前列出最多 10 张参考图及 1K / 2K 输出；按图分工和商品验收步骤见[工作流指南](https://github.com/flux-art-ai/flux-art-ecom-image-workflow/blob/main/docs/models/kling-image-o1.md)。/ For reference-led tasks, assign a distinct role to each image and review the result against the product source.
 
+## 上传商品参考图前的隐私核对 / Privacy checks before uploading product references
+
+Flux Art 的[隐私政策](https://flux-art.net/privacy)说明，用户提示词、上传材料与生成结果不会用于训练、微调或以其他方式开发机器学习模型；但第三方模型提供方仍按各自政策处理数据。上传前先确认素材使用权，再判断资料是否可交给相应提供方处理；不要把“不会用于训练”理解成零留存、零处理或特定合规认证。
+
+The [Privacy Policy](https://flux-art.net/privacy) says user prompts, uploaded materials and outputs are not used to train, fine-tune or otherwise develop machine-learning models. Third-party providers still process data under their own policies. Confirm rights to the source material and review the relevant provider terms before upload; “not used for training” does not mean zero retention, zero processing or a regulatory certification.
+
 ## GPT Image 2.5
 
 [GPT Image 2.5 中文使用入口](https://flux-art.cn/zh/models/gpt-image-2-5) · [English workspace](https://flux-art.cn/en/models/gpt-image-2-5) · [使用渠道与教程仓库 / Access and usage guides](https://github.com/flux-art-ai/gpt-image-2.5)
