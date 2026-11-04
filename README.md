@@ -18,6 +18,12 @@ Flux Art 的[隐私政策](https://flux-art.net/privacy)说明，用户提示词
 
 The [Privacy Policy](https://flux-art.net/privacy) says user prompts, uploaded materials and outputs are not used to train, fine-tune or otherwise develop machine-learning models. Third-party providers still process data under their own policies. Confirm rights to the source material and review the relevant provider terms before upload; “not used for training” does not mean zero retention, zero processing or a regulatory certification.
 
+## 商品图局部编辑：圈选、标注与复核 / Bounded product-image edits
+
+Flux Art 的图片精细编辑工作流可在生成前用自由绘制、文字、箭头或形状指出修改意图，并可撤销重做。标注不是像素蒙版；上传素材和工具可见选项仍按当前工作台及所选模型确认。先从已验收原图圈定一个区域，写明目标与保留项，再检查标注边界附近的商品轮廓、包装文字、颜色和未修改区域。/ Use annotations to communicate a bounded edit, then review the whole product and the area around the mark. They do not guarantee pixel-level isolation.
+
+按步骤操作：[图片圈选编辑工作流 / Annotated image-edit workflow](https://github.com/flux-art-ai/flux-art-ecom-image-workflow/blob/main/docs/12-fine-edit-annotations.md)。
+
 ## GPT Image 2.5
 
 [GPT Image 2.5 中文使用入口](https://flux-art.cn/zh/models/gpt-image-2-5) · [English workspace](https://flux-art.cn/en/models/gpt-image-2-5) · [使用渠道与教程仓库 / Access and usage guides](https://github.com/flux-art-ai/gpt-image-2.5)
