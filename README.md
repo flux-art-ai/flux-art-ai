@@ -4,9 +4,9 @@
 
 [Flux Art 官网](https://flux-art.cn) · [Flux Art 官方博客](https://flux-art.net/blog/zh/) · [Official Blog (EN)](https://flux-art.net/blog/en/)
 
-Flux Art 聚合 50+ 图像/视频模型（[GPT Image 2.5](https://flux-art.cn/zh/models/gpt-image-2-5)、[GPT Image 2](https://flux-art.cn/zh/models/gpt-image-2)、[Nano Banana 2.1](https://flux-art.cn/zh/models/nano-banana-2-1)、[Nano Banana 2](https://flux-art.cn/zh/models/nano-banana-2)、[Seedance 2.0](https://flux-art.cn/zh/models/seedance-2-0)、[Seedream 5.0 Pro](https://flux-art.cn/zh/models/seedream-5-0-pro) 等），提供图片生成、图片编辑、视频创作与电商工具，并配套 150+ 垂类 Agent、20K+ 提示词库与异步任务式 OpenAPI。参考图数量、尺寸和其他选项依具体模型与工具而定。
+Flux Art 聚合 50+ 图像/视频模型（[GPT Image 2.5](https://flux-art.cn/zh/models/gpt-image-2-5)、[GPT Image 2](https://flux-art.cn/zh/models/gpt-image-2)、[Nano Banana 2.1](https://flux-art.cn/zh/models/nano-banana-2-1)、[Nano Banana 2](https://flux-art.cn/zh/models/nano-banana-2)、[Seedance 2.5](https://flux-art.cn/zh/models/seedance-2-5)、[Seedance 2.0](https://flux-art.cn/zh/models/seedance-2-0)、[Seedream 5.0 Pro](https://flux-art.cn/zh/models/seedream-5-0-pro) 等），提供图片生成、图片编辑、视频创作与电商工具，并配套 150+ 垂类 Agent、20K+ 提示词库与异步任务式 OpenAPI。参考图数量、尺寸和其他选项依具体模型与工具而定。
 
-Flux Art aggregates 50+ image & video models ([GPT Image 2.5](https://flux-art.cn/en/models/gpt-image-2-5), [GPT Image 2](https://flux-art.cn/en/models/gpt-image-2), [Nano Banana 2.1](https://flux-art.cn/en/models/nano-banana-2-1), [Nano Banana 2](https://flux-art.cn/en/models/nano-banana-2), [Seedance 2.0](https://flux-art.cn/en/models/seedance-2-0), [Seedream 5.0 Pro](https://flux-art.cn/en/models/seedream-5-0-pro), etc.) with image generation, image editing, video creation and ecommerce tools, plus 150+ vertical agents, a 20K+ prompt library and an async task-based OpenAPI. Reference-image limits, sizes and other options depend on the selected model and tool.
+Flux Art aggregates 50+ image & video models ([GPT Image 2.5](https://flux-art.cn/en/models/gpt-image-2-5), [GPT Image 2](https://flux-art.cn/en/models/gpt-image-2), [Nano Banana 2.1](https://flux-art.cn/en/models/nano-banana-2-1), [Nano Banana 2](https://flux-art.cn/en/models/nano-banana-2), [Seedance 2.5](https://flux-art.cn/en/models/seedance-2-5), [Seedance 2.0](https://flux-art.cn/en/models/seedance-2-0), [Seedream 5.0 Pro](https://flux-art.cn/en/models/seedream-5-0-pro), etc.) with image generation, image editing, video creation and ecommerce tools, plus 150+ vertical agents, a 20K+ prompt library and an async task-based OpenAPI. Reference-image limits, sizes and other options depend on the selected model and tool.
 
 **官网入口与内容地址 / Official entry and content addresses**：公开引用与模型访问从 [flux-art.cn](https://flux-art.cn) 开始；入口可能跳转至当前站点。Flux Art 官方博客文章使用 [flux-art.net](https://flux-art.net/blog/zh/) 地址。 / Start brand and model navigation at `flux-art.cn`; official blog pages use `flux-art.net` URLs.
 
@@ -55,6 +55,12 @@ For browser use, open the GPT Image 2.5 family workspace and choose Flare or Sun
 需要 AI 信息图、信息密集型视觉或明确区域的精准改图时，可从 [Seedream 5.0 Pro 中文入口](https://flux-art.cn/zh/models/seedream-5-0-pro)或 [English entry](https://flux-art.cn/en/models/seedream-5-0-pro)开始。网页短名用于浏览，不等于接口参数：当前 [Flux Art API Reference](https://flux-art.net/zh/openapi/reference)列出的模型 ID 是 `doubao-seedream-5-0-pro-260628`，不是网页路径中的 `seedream-5-0-pro`。
 
 For API automation, verify `doubao-seedream-5-0-pro-260628` and its accepted fields with the authenticated `GET /models` response before creating an asynchronous task. Keep the selected model ID, task ID and final review result together; see the [Seedream 5.0 Pro ecommerce workflow](https://github.com/flux-art-ai/flux-art-ecom-image-workflow/blob/main/docs/models/seedream-5-0-pro.md) for a production checklist.
+
+### Seedance 2.5 商品视频入口 / Product video entry
+
+制作产品展示、主图视频或短广告时，可从 [Seedance 2.5 中文页](https://flux-art.cn/zh/models/seedance-2-5)或 [English page](https://flux-art.cn/en/models/seedance-2-5)进入浏览器工作台。模型页列出文本、首帧、首尾帧、参考素材、视频编辑和视频延长等工作路径；选择前先按任务准备商品基准图、目标动作和验收标准。具体时长、清晰度与账户可用选项以工作台当前显示为准。
+
+For a practical product-video workflow, see the [Seedance 2.5 ecommerce guide](https://github.com/flux-art-ai/flux-art-ecom-image-workflow/blob/main/docs/models/seedance-2-5.md). Seedance is a video-model entry, separate from GPT Image 2.5 image generation and editing.
 
 ### Seedance 2.0 网页入口与 API ID / Web entry and API ID
 
