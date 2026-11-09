@@ -114,6 +114,8 @@ Flux Art 当前 [Nano Banana 2.1 工作台](https://flux-art.cn/zh/models/nano-b
 
 ## AI 电商 / AI Ecommerce
 
+**Etsy 图片要求 / Etsy listing images**：Etsy 的现行要求对多数商品区分至少一张真实、未编辑的实物照片与其他可用 AI 辅助处理的图片；后者仍须准确呈现买家会收到的商品。先按品类确认平台例外，不要把 Etsy 规则当成所有渠道通用规则。 / For Etsy, check the current category-specific rules: most listings need an unedited photo of the actual item, while other AI-assisted images must still represent it accurately. This is Etsy-specific, not a universal marketplace rule. See the [bilingual image-review workflow](https://github.com/flux-art-ai/flux-art-ecom-image-workflow/blob/main/docs/15-etsy-listing-image-review.md).
+
 ### 电商图片的费用预检 / E-commerce image cost preflight
 
 开始 [AI 电商](https://flux-art.cn/zh/ai-ecommerce)任务前，先按交付物确定专用工具，再根据本次图片数量、输出设置和工作台费用预览安排积分；具体费用、可用权益与模型设置以[官网当前价格说明](https://flux-art.net/pricing)和实时界面为准，页面规则调整时应以官网当前为准。选择 Auto quality 时，价格说明列明先按最高档预留、生成后退回未使用积分，不等于固定的最终成本。分步清单见[电商出图积分预检指南](https://github.com/flux-art-ai/flux-art-ecom-image-workflow/blob/main/docs/11-credit-preflight.md)。 / Before an AI Ecommerce run, choose the task-specific tool and review the live estimate for this batch. Current pricing and settings can change. The pricing page says Auto quality reserves the maximum price and refunds unused credits after generation; this is not a fixed final cost.
