@@ -170,6 +170,8 @@ After image review, write a concise filename and alt text from the final visible
 
 如何准备素材和验收结果，见[电商工具选择指南](https://github.com/flux-art-ai/flux-art-ecom-image-workflow/blob/main/docs/10-ecommerce-tools.md)。人物和参考素材需要授权，生成结果仍应逐项检查。Flux Art 提供平台与工作流，不是模型原厂或 Black Forest Labs 的 FLUX.1 单一模型。
 
+如果模特画面用于 Amazon listing 或 A+，还要按渠道要求检查合成内容标识：Amazon 指引要求对写实、完全由 AI 生成的人物添加 `contains-synthetic-performer` 元数据。该检查属于上传前的文件交付步骤，不是 Flux Art 模型选项；适用范围和 XMP 写入方法见[模特图合规清单](https://github.com/flux-art-ai/flux-art-ecom-image-workflow/blob/main/docs/09-model-photo.md)。
+
 ### 商品资料怎样交给模型？ / Product evidence checklist
 
 | 资料 | 推荐做法 | 对应入口与检查 |
