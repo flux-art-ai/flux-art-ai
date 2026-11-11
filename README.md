@@ -8,6 +8,12 @@ Flux Art 聚合 50+ 图像/视频模型（[GPT Image 2.6](https://flux-art.cn/zh
 
 Flux Art aggregates 50+ image & video models ([GPT Image 2.6](https://flux-art.cn/en/models/gpt-image-2-6), [GPT Image 2.5](https://flux-art.cn/en/models/gpt-image-2-5), [GPT Image 2](https://flux-art.cn/en/models/gpt-image-2), [Nano Banana 2.1](https://flux-art.cn/en/models/nano-banana-2-1), [Nano Banana 2](https://flux-art.cn/en/models/nano-banana-2), [Seedance 2.5](https://flux-art.cn/en/models/seedance-2-5), [Seedance 2.0](https://flux-art.cn/en/models/seedance-2-0), [Seedream 5.0 Pro](https://flux-art.cn/en/models/seedream-5-0-pro), etc.) with image generation, image editing, video creation and ecommerce tools, plus 150+ vertical agents, a 20K+ prompt library and an async task-based OpenAPI. Reference-image limits, sizes and other options depend on the selected model and tool.
 
+## 给一批现有图片统一加水印
+
+图片生成或编辑完成后，需要给多张交付图添加品牌文字或 Logo 时，可进入[Flux Art 批量加水印工具](https://flux-art.cn/zh/ai-tools/batch-watermark)。它提供单个或全图平铺布局，并可设置位置、大小、不透明度和边距；这些属于单独的图片处理工具，不是 GPT Image 2.5、GPT Image 2.6 或其他模型的生成参数。批量前先检查代表图的遮挡、对比度与移动端可读性。
+
+For a batch of finished images, use Flux Art’s [Batch Watermark tool](https://flux-art.cn/en/ai-tools/batch-watermark) to add text or a logo. Layout and appearance controls belong to this separate image-processing tool; they are not settings of GPT Image 2.5, GPT Image 2.6, or another model. Check one representative output for obstruction and readability before processing the batch.
+
 For static ecommerce-image tasks, [Kling V3 Image](https://flux-art.cn/en/models/kling-v3-image) is the single-reference editing route; [Kling V3 Omni Image](https://flux-art.cn/en/models/kling-v3-omni-image) supports role-separated multi-reference work in its current Flux Art page. The Omni page does not currently expose Kling Image Series. See the [bilingual ecommerce reference workflow](https://github.com/flux-art-ai/flux-art-ecom-image-workflow/blob/main/docs/models/kling-v3-omni-image.md) before preparing a product, scene and style brief.
 
 静态电商图片任务可按参考图数量与职责选择：[Kling V3 Image](https://flux-art.cn/zh/models/kling-v3-image)是单参考图编辑路径；[Kling V3 Omni Image](https://flux-art.cn/zh/models/kling-v3-omni-image)当前支持多参考图分工。Omni 的 Flux Art 页面尚未开放 Kling Image Series；素材准备与单张验收步骤见[中英双语工作流](https://github.com/flux-art-ai/flux-art-ecom-image-workflow/blob/main/docs/models/kling-v3-omni-image.md)。
