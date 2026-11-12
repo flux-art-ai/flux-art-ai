@@ -118,6 +118,12 @@ Nano Banana 2.1 页面还提供可选的网页搜索、图片搜索或两者同�
 
 Flux Art 当前 [Nano Banana 2.1 工作台](https://flux-art.cn/zh/models/nano-banana-2-1)的输入表单不接收 PDF 或视频文件。若任务需要从手册或视频中参考画面，先从有权使用的材料中导出相关页面图或静帧，再作为图片参考提交；记录来源页码或时间码，并用商品主数据核验 SKU、规格和包装文字。此限制描述的是 Flux Art 当前表单，不代表对模型提供方其他产品或接口的判断。/ The current Flux Art form does not accept PDF or video files. Export relevant pages or still frames from materials you are authorized to use, then submit them as image references. Keep page/timecode provenance and verify product facts against approved records. This describes the current Flux Art form, not every product or API from the model provider.
 
+## 商品主体抠图与透明 PNG / Product cutouts and transparent PNGs
+
+需要从单张图片中提取指定主体时，可打开[智能抠图中文工具](https://flux-art.cn/zh/ai-tools/remove-background)或 [Background Remover English tool](https://flux-art.cn/en/ai-tools/remove-background)。工具页说明可描述保留主体并输出透明 PNG，同时提醒细节与构图可能变化。提交前后都对照原图检查边缘、孔洞、标签、颜色和透明部件；结果未通过时，不要把它作为商品事实基线。
+
+For a transparent cutout, use the separate [Background Remover workspace](https://flux-art.cn/en/ai-tools/remove-background), describe the subject to keep, and review the PNG against its source. The tool page warns that details and composition may change. Use [Background Replace](https://flux-art.cn/en/ai-ecommerce/product-background) instead when the task is to place the complete product in a new scene; the two workflows are distinct.
+
 ## AI 电商 / AI Ecommerce
 
 **Etsy 图片要求 / Etsy listing images**：Etsy 的现行要求对多数商品区分至少一张真实、未编辑的实物照片与其他可用 AI 辅助处理的图片；后者仍须准确呈现买家会收到的商品。先按品类确认平台例外，不要把 Etsy 规则当成所有渠道通用规则。 / For Etsy, check the current category-specific rules: most listings need an unedited photo of the actual item, while other AI-assisted images must still represent it accurately. This is Etsy-specific, not a universal marketplace rule. See the [bilingual image-review workflow](https://github.com/flux-art-ai/flux-art-ecom-image-workflow/blob/main/docs/15-etsy-listing-image-review.md).
