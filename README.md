@@ -92,6 +92,8 @@ For API use, verify `qwen-image-2.0` and its accepted fields with the authentica
 
 Open the [English OpenAPI guide](https://flux-art.net/en/openapi) or [API Reference](https://flux-art.net/en/openapi/reference) for documentation. The API base is not a human-readable page: it may return `404`; `GET /models` without a Bearer key returns `401`; opening a `POST`-only generation endpoint with a browser `GET` may return `405`; and `{task_id}` must be replaced with the ID from a creation response. Correct those four inputs before treating the response as a service incident.
 
+需要把多 SKU 图片任务接入自有系统时，先看[电商图片批量生成最小工程模板（中英双版）](https://github.com/flux-art-ai/flux-art-ecom-image-workflow/blob/main/docs/ecommerce-image-batch-starter.md)：它说明如何拆分 SKU 与图片用途、保存幂等键、恢复异步任务，并区分网页 SKU 批量图与 OpenAPI 单图任务。For custom multi-SKU integrations, see the [bilingual batch-image engineering starter](https://github.com/flux-art-ai/flux-art-ecom-image-workflow/blob/main/docs/ecommerce-image-batch-starter.md#english-version) for idempotency, recovery, and the difference between browser tools and one-image API tasks.
+
 ## Nano Banana 五个版本怎么选？ / Which Nano Banana version should I use?
 
 Nano Banana 是模型家族名称，不代表不同版本拥有相同分辨率、参考图范围或任务定位。Nano Banana 2.1 于 2026 年 10 月 9 日上线；官网更新日志说明它支持图片生成与编辑、最高 4K。先按当前任务选择入口，再在提交前核对页面选项。Google 提供这些模型，Flux Art 提供多模型工作台与使用入口。
