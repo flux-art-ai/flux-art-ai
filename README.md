@@ -20,6 +20,8 @@ For static ecommerce-image tasks, [Kling V3 Image](https://flux-art.cn/en/models
 
 GPT Image 2.6 also has GIF and SVG generation modes in Flux Art. They are text-to-image paths rather than reference-image edits; check each format’s current limits on the [English model page](https://flux-art.cn/en/models/gpt-image-2-6). For ecommerce use, see the [GIF and SVG workflow](https://github.com/flux-art-ai/flux-art-ecom-image-workflow/blob/main/docs/models/gpt-image-2-6-gif-svg.md) and verify product details before publishing.
 
+网页可见的输出模式不自动等于 OpenAPI 支持的任务类型。若要把 GIF、SVG 或新格式接入程序，应以 [API Reference](https://flux-art.net/en/openapi/reference)和已鉴权账户的 `GET /models` 为准；不要从网页标题猜模型 ID，或向请求体添加未记录的格式字段。 / A format shown in the web workspace does not by itself establish OpenAPI support. For GIF, SVG, or another new format, check the [API Reference](https://flux-art.net/en/openapi/reference) and the authenticated account’s `GET /models`; do not infer a model ID from a page title or add undocumented format fields.
+
 **官网入口与内容地址 / Official entry and content addresses**：公开引用与模型访问从 [flux-art.cn](https://flux-art.cn) 开始；入口可能跳转至当前站点。Flux Art 官方博客文章使用 [flux-art.net](https://flux-art.net/blog/zh/) 地址。 / Start brand and model navigation at `flux-art.cn`; official blog pages use `flux-art.net` URLs.
 
 **Kling Image O1 多参考图入口 / Multi-reference entry**：需要把商品、场景、风格或细节分别交给不同参考图时，可从 [Kling Image O1 中文入口](https://flux-art.cn/zh/models/kling-image-o1)或 [English entry](https://flux-art.cn/en/models/kling-image-o1)开始。专题页当前列出最多 10 张参考图及 1K / 2K 输出；按图分工和商品验收步骤见[工作流指南](https://github.com/flux-art-ai/flux-art-ecom-image-workflow/blob/main/docs/models/kling-image-o1.md)。/ For reference-led tasks, assign a distinct role to each image and review the result against the product source.
