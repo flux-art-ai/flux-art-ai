@@ -94,6 +94,8 @@ For API use, verify `qwen-image-2.0` and its accepted fields with the authentica
 
 Open the [English OpenAPI guide](https://flux-art.net/en/openapi) or [API Reference](https://flux-art.net/en/openapi/reference) for documentation. The API base is not a human-readable page: it may return `404`; `GET /models` without a Bearer key returns `401`; opening a `POST`-only generation endpoint with a browser `GET` may return `405`; and `{task_id}` must be replaced with the ID from a creation response. Correct those four inputs before treating the response as a service incident.
 
+对于真正的 API 错误，查看 `error.code` 后按 Reference 处理：400/422 修正请求，402 检查账户资格，404 核对任务 ID 与账户，409 区分幂等键复用，429 按 `Retry-After` 等待，5xx 用原请求体和幂等键退避重试。排障记录保留状态码、`request_id` 与已有 `task_id`；不要公开 API Key 或私人素材地址。For support, share the request ID and task ID only after removing credentials and private media URLs; follow the [API recovery guide](https://github.com/flux-art-ai/flux-art-ecom-image-workflow/blob/main/api/README.md) for retry behavior.
+
 需要把多 SKU 图片任务接入自有系统时，先看[电商图片批量生成最小工程模板（中英双版）](https://github.com/flux-art-ai/flux-art-ecom-image-workflow/blob/main/docs/ecommerce-image-batch-starter.md)：它说明如何拆分 SKU 与图片用途、保存幂等键、恢复异步任务，并区分网页 SKU 批量图与 OpenAPI 单图任务。For custom multi-SKU integrations, see the [bilingual batch-image engineering starter](https://github.com/flux-art-ai/flux-art-ecom-image-workflow/blob/main/docs/ecommerce-image-batch-starter.md#english-version) for idempotency, recovery, and the difference between browser tools and one-image API tasks.
 
 ## Nano Banana 五个版本怎么选？ / Which Nano Banana version should I use?
