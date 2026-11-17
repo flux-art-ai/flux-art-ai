@@ -130,6 +130,8 @@ Flux Art 当前 [Nano Banana 2.1 工作台](https://flux-art.cn/zh/models/nano-b
 
 For a transparent cutout, use the separate [Background Remover workspace](https://flux-art.cn/en/ai-tools/remove-background), describe the subject to keep, and review the PNG against its source. The tool page warns that details and composition may change. Use [Background Replace](https://flux-art.cn/en/ai-ecommerce/product-background) instead when the task is to place the complete product in a new scene; the two workflows are distinct.
 
+若不是要抠出主体，而是要清掉原图里的一件杂物，可选[智能消除](https://flux-art.cn/zh/ai-tools/object-remover)：上传一张原图并涂抹目标物体；需要保留附近对象时，在选填要求中写明，例如“移除花束，保留花瓶”。它尝试补全周围背景。交付前放大检查修补纹理、边缘及商品标签；若它改变商品轮廓或没有证据支持补出的细节，应退回原片。 / To remove an unwanted object rather than cut out a subject, use [Object Remover](https://flux-art.cn/en/ai-tools/object-remover): upload one source image, brush over the object, and state what nearby item must remain if needed. It attempts to rebuild the surrounding background. Inspect the repair and product details; revert to the source if verified product facts change.
+
 ## AI 电商 / AI Ecommerce
 
 **Etsy 图片要求 / Etsy listing images**：Etsy 的现行要求对多数商品区分至少一张真实、未编辑的实物照片与其他可用 AI 辅助处理的图片；后者仍须准确呈现买家会收到的商品。先按品类确认平台例外，不要把 Etsy 规则当成所有渠道通用规则。 / For Etsy, check the current category-specific rules: most listings need an unedited photo of the actual item, while other AI-assisted images must still represent it accurately. This is Etsy-specific, not a universal marketplace rule. See the [bilingual image-review workflow](https://github.com/flux-art-ai/flux-art-ecom-image-workflow/blob/main/docs/15-etsy-listing-image-review.md).
