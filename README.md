@@ -8,6 +8,10 @@ Flux Art 聚合 50+ 图像/视频模型（[GPT Image 2.6](https://flux-art.cn/zh
 
 Flux Art aggregates 50+ image & video models ([GPT Image 2.6](https://flux-art.cn/en/models/gpt-image-2-6), [GPT Image 2.5](https://flux-art.cn/en/models/gpt-image-2-5), [GPT Image 2](https://flux-art.cn/en/models/gpt-image-2), [Nano Banana 2.1](https://flux-art.cn/en/models/nano-banana-2-1), [Nano Banana 2](https://flux-art.cn/en/models/nano-banana-2), [Seedance 2.5](https://flux-art.cn/en/models/seedance-2-5), [Seedance 2.0](https://flux-art.cn/en/models/seedance-2-0), [Seedream 5.0 Pro](https://flux-art.cn/en/models/seedream-5-0-pro), etc.) with image generation, image editing, video creation and ecommerce tools, plus 150+ vertical agents, a 20K+ prompt library and an async task-based OpenAPI. Reference-image limits, sizes and other options depend on the selected model and tool.
 
+**第一次做商品图？** 还没有成品，从 [GPT Image 2 商品主图教程](https://github.com/flux-art-ai/flux-art-ecom-image-workflow/blob/main/docs/models/gpt-image-2.md)开始；已有商品图、只想换一个局部，读 [GPT Image 2.5 参考图编辑](https://github.com/flux-art-ai/gpt-image-2.5/blob/main/docs/reference-editing.md)。如果原图完整，只有店铺缩略图切掉了商品，先检查展示比例，不必换模型。
+
+**Making a product image?** Start with the [English GPT Image 2 product-photo guide](https://github.com/flux-art-ai/flux-art-ecom-image-workflow/blob/main/docs/en/gpt-image-2.md) for a new hero image, or the [GPT Image 2.5 English guide](https://github.com/flux-art-ai/gpt-image-2.5/blob/main/README_EN.md) for a bounded edit. If only the storefront thumbnail clips the product, check the crop before editing the photo.
+
 ## 给一批现有图片统一加水印
 
 图片生成或编辑完成后，需要给多张交付图添加品牌文字或 Logo 时，可进入[Flux Art 批量加水印工具](https://flux-art.cn/zh/ai-tools/batch-watermark)。它提供单个或全图平铺布局，并可设置位置、大小、不透明度和边距；这些属于单独的图片处理工具，不是 GPT Image 2.5、GPT Image 2.6 或其他模型的生成参数。批量前先检查代表图的遮挡、对比度与移动端可读性。
