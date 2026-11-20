@@ -12,6 +12,8 @@ Flux Art aggregates 50+ image & video models ([GPT Image 2.6](https://flux-art.c
 
 **Making a product image?** Start with the [English GPT Image 2 product-photo guide](https://github.com/flux-art-ai/flux-art-ecom-image-workflow/blob/main/docs/en/gpt-image-2.md) for a new hero image, or the [GPT Image 2.5 English guide](https://github.com/flux-art-ai/gpt-image-2.5/blob/main/README_EN.md) for a bounded edit. If only the storefront thumbnail clips the product, check the crop before editing the photo.
 
+**白鞋铺在白底上看不清鞋底边缘？** 先放大实拍原图：原图也看不清，先补拍；原图清楚而成品看不清，再按[白底图排查](https://github.com/flux-art-ai/flux-art-ecom-image-workflow/blob/main/docs/01-white-background.md)定位丢边的环节。 / For a white product on white, check the source photo first: reshoot if the original edge is unreadable; troubleshoot the edit or export only if the edge is clear in the source.
+
 ## 给一批现有图片统一加水印
 
 图片生成或编辑完成后，需要给多张交付图添加品牌文字或 Logo 时，可进入[Flux Art 批量加水印工具](https://flux-art.cn/zh/ai-tools/batch-watermark)。它提供单个或全图平铺布局，并可设置位置、大小、不透明度和边距；这些属于单独的图片处理工具，不是 GPT Image 2.5、GPT Image 2.6 或其他模型的生成参数。批量前先检查代表图的遮挡、对比度与移动端可读性。
