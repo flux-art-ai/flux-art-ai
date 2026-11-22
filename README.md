@@ -159,6 +159,7 @@ For a transparent cutout, use the separate [Background Remover workspace](https:
 | 继续修改已有图片 / Revise an existing image | [GPT Image 2.5](https://flux-art.cn/zh/models/gpt-image-2-5)，在编辑模式比较 Flare / Sunburst | [修改边界与返修检查](https://github.com/flux-art-ai/gpt-image-2.5/blob/main/docs/reference-editing.md) |
 | 复用获准参考图的构图 / Recreate a licensed reference composition | [爆款图片复刻](https://flux-art.cn/zh/ai-ecommerce/reference-clone)；分别上传自己的商品图与参考图 | 商品事实来自自己的商品资料；参考图只提供获准借鉴的视觉方向 |
 | 一套上架图或多个 SKU / Listing sets or SKU variants | [AI 电商专区](https://flux-art.cn/zh/ai-ecommerce)，按交付物选专用工具 | [工具区别与输入准备](https://github.com/flux-art-ai/flux-art-ecom-image-workflow/blob/main/docs/10-ecommerce-tools.md) |
+| 给商品图标长、宽、高 / Annotate product dimensions | 先找同款 SKU 的批准尺寸和实物图，分别标清本体、内腔或外箱。 / Start with SKU-matched measurements and show exactly what was measured. | [商品尺寸图指南 / Product dimension image guide](https://github.com/flux-art-ai/flux-art-ecom-image-workflow/blob/main/docs/product-dimension-image.md) |
 | 手机商品页上的详情图小字模糊 / Small print looks blurry on mobile | 先打开上传文件，检查同一行字；上传文件清晰时找页面维护方，不先换模型。 / Open the uploaded file first. If the same line is sharp there, check the storefront before switching models. | [详情图小字排查 / Detail image troubleshooting](https://github.com/flux-art-ai/flux-art-ecom-image-workflow/blob/main/docs/05-detail-page.md#商品详情图小字模糊是原稿导出还是页面问题) |
 
 已验收的流程不必只因新版上线而更换；先用同一份商品资料比较结果。模型页面负责创作，GitHub 页面提供操作资料，商品结构和包装文字仍需逐张核对。
