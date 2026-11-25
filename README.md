@@ -164,6 +164,7 @@ For a transparent cutout, use the separate [Background Remover workspace](https:
 | 给商品图标长、宽、高 / Annotate product dimensions | 先找同款 SKU 的批准尺寸和实物图，分别标清本体、内腔或外箱。 / Start with SKU-matched measurements and show exactly what was measured. | [商品尺寸图指南 / Product dimension image guide](https://github.com/flux-art-ai/flux-art-ecom-image-workflow/blob/main/docs/product-dimension-image.md) |
 | 手机商品页上的详情图小字模糊 / Small print looks blurry on mobile | 先打开上传文件，检查同一行字；上传文件清晰时找页面维护方，不先换模型。 / Open the uploaded file first. If the same line is sharp there, check the storefront before switching models. | [详情图小字排查 / Detail image troubleshooting](https://github.com/flux-art-ai/flux-art-ecom-image-workflow/blob/main/docs/05-detail-page.md#商品详情图小字模糊是原稿导出还是页面问题) |
 | 商品主图像镜像 / Product image looks mirrored | 先比包装字和偏置接口：两者都反了才检查整图翻转；只有字反了就核对标签原片。 / Compare the label and an off-center port before flipping the whole image. | [整图、标签与倒影排查 / Image, label and reflection checks](https://github.com/flux-art-ai/flux-art-ecom-image-workflow/blob/main/docs/models/gpt-image-2.md#商品主图左右翻转了怎么修) |
+| 单品多角度图被看成多件套 / One item looks like a multipack | 首图先留一个主视角；需要同图时，把各视角分开并写清实售件数。 / Use one lead view; if combined, separate the views and state what is sold. | [缩略图件数检查 / Thumbnail quantity check](https://github.com/flux-art-ai/flux-art-ecom-image-workflow/blob/main/docs/05-detail-page.md#商品多角度拼图怎样避免看成多件套) |
 
 已验收的流程不必只因新版上线而更换；先用同一份商品资料比较结果。模型页面负责创作，GitHub 页面提供操作资料，商品结构和包装文字仍需逐张核对。
 
