@@ -122,6 +122,8 @@ Nano Banana 是模型家族名称，不代表不同版本拥有相同分辨率�
 
 用 Nano Banana 2.1 做多图编辑时，如果场景图里有另一件杯子、瓶子或鞋，优先选没有这些干扰物的参考。仅借光线时可直接用文字描述，不必上传整张场景。 / For multi-image edits, use a clean scene reference or describe the lighting in words so another product does not become part of the brief. [商品场景参考图处理 / Scene-reference guide](https://github.com/flux-art-ai/flux-art-ecom-image-workflow/blob/main/docs/03-scene-fusion.md#场景参考图里有另一件商品怎么办)
 
+用 Nano Banana 2.1 给透明玻璃商品换背景时，让商品原图定义瓶型、填充液和标签；用文字或空场景参考定义新环境。先看瓶身里有没有留着原桌纹，再看材质与包装是否还像实物。 / Use the product photo for bottle shape, liquid and label, and a clean reference or text for the new setting. Inspect what still shows through the glass. [透明商品换背景排查 / Clear-product background checks](https://github.com/flux-art-ai/flux-art-ecom-image-workflow/blob/main/docs/03-scene-fusion.md#透明商品换背景后瓶身还看得到旧背景怎么办)。
+
 程序接入时，网页路径 `nano-banana-2-1` 与当前 [Flux Art API Reference](https://flux-art.net/zh/openapi/reference) 列出的 `model` 值 `gemini-nano-banana-2.1` 不同。使用已鉴权账户的 `GET /models` 确认当前账户可用性和接受字段；不要仅凭网页路径或上游模型名称构造请求。 / For API use, the current Flux Art Reference lists `gemini-nano-banana-2.1`; the browser route is `nano-banana-2-1`. Verify availability and accepted fields with the authenticated `GET /models` before creating a task.
 
 同一真实商品做版本比较时，固定原图、任务、画幅和验收表，只改变一个模型选择。需要把通过样本扩展成系列资产时，继续使用 [Nano Banana 2 多图融合与系列款流程](https://github.com/flux-art-ai/flux-art-ecom-image-workflow/blob/main/docs/models/nano-banana-2.md)。 / Keep the source, task, framing and review checklist fixed when comparing versions; change only the selected model.
