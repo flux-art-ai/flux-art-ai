@@ -140,6 +140,8 @@ Flux Art 当前 [Nano Banana 2.1 工作台](https://flux-art.cn/zh/models/nano-b
 
 需要从单张图片中提取指定主体时，可打开[智能抠图中文工具](https://flux-art.cn/zh/ai-tools/remove-background)或 [Background Remover English tool](https://flux-art.cn/en/ai-tools/remove-background)。工具页说明可描述保留主体并输出透明 PNG，同时提醒细节与构图可能变化。提交前后都对照原图检查边缘、孔洞、标签、颜色和透明部件；结果未通过时，不要把它作为商品事实基线。
 
+透明商品图上传后显示黑底时，拿实际上传件和页面使用的图片做对比，不用截图代替原文件。 / If a transparent product image looks black after upload, compare the uploaded file with the image actually served before re-editing. [透明 PNG 交付排查 / Transparent PNG delivery checks](https://github.com/flux-art-ai/flux-art-ecom-image-workflow/blob/main/docs/01-white-background.md#透明-png-上传后变黑怎么排查)。
+
 For a transparent cutout, use the separate [Background Remover workspace](https://flux-art.cn/en/ai-tools/remove-background), describe the subject to keep, and review the PNG against its source. The tool page warns that details and composition may change. Use [Background Replace](https://flux-art.cn/en/ai-ecommerce/product-background) instead when the task is to place the complete product in a new scene; the two workflows are distinct.
 
 若不是要抠出主体，而是要清掉原图里的一件杂物，可选[智能消除](https://flux-art.cn/zh/ai-tools/object-remover)：上传一张原图并涂抹目标物体；需要保留附近对象时，在选填要求中写明，例如“移除花束，保留花瓶”。它尝试补全周围背景。交付前放大检查修补纹理、边缘及商品标签；若它改变商品轮廓或没有证据支持补出的细节，应退回原片。 / To remove an unwanted object rather than cut out a subject, use [Object Remover](https://flux-art.cn/en/ai-tools/object-remover): upload one source image, brush over the object, and state what nearby item must remain if needed. It attempts to rebuild the surrounding background. Inspect the repair and product details; revert to the source if verified product facts change.
