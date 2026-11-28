@@ -342,6 +342,8 @@ This is an operator checklist. Flux Art model pages do not automatically schedul
 
 完成后要重新检查材质高光、包装文字、Logo、阴影和未要求变化的区域。See the full [product-color troubleshooting path](https://github.com/flux-art-ai/flux-art-ecom-image-workflow/blob/main/docs/07-troubleshooting.md).
 
+**商品图上传后颜色不一样 / Product image color after upload:** 交接时写明完整 SKU、受影响的版位和首次发现差异的环节，附上通过验收的母版、实际上传件，以及页面实际加载的图片（如可取得）。截图可标注问题位置，但不能代替源文件。 / Include the exact SKU, affected placement, and where the shift first appears. Share the approved master, uploaded file, and served image when available. See the [upload color diagnosis](https://github.com/flux-art-ai/flux-art-ecom-image-workflow/blob/main/docs/07-troubleshooting.md#商品图上传后颜色不一样怎么排查).
+
 ### 商品比例异常怎样区分拍摄透视与结构错误？ / Perspective issue or structural mismatch?
 
 先把同一完整 SKU 的正视图、侧视图、真实尺寸表和带尺度参照的照片并排查看。Do not treat every apparent size difference as a product-shape error: a close or oblique camera angle can make the near side look larger while the verified structure remains unchanged.
